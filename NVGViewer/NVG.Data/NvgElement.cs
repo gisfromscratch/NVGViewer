@@ -14,25 +14,9 @@
  * limitations under the License.
  */
 
-using Esri.ArcGISRuntime.Controls;
-using MahApps.Metro.Controls;
-using System.Diagnostics;
-
-namespace NVGViewer
+namespace NVG.Data
 {
-    public partial class MainWindow : MetroWindow
+    public class NvgElement
     {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
-
-        private void FocusMapViewLayerLoaded(object sender, LayerLoadedEventArgs e)
-        {
-            if (e.LoadError == null)
-                return;
-
-            Debug.WriteLine(string.Format("Error while loading layer : {0} - {1}", e.Layer.ID, e.LoadError.Message));
-        }
     }
 }
