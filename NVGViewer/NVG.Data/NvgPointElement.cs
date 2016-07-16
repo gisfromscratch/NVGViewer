@@ -14,31 +14,21 @@
  * limitations under the License.
  */
 
-using System.Collections.Generic;
-
 namespace NVG.Data
 {
     /// <summary>
-    /// Represents a NVG element.
+    /// Represents a NVG point element.
     /// </summary>
-    public class NvgElement
+    public class NvgPointElement
     {
-        /// <summary>
-        /// Creates a new NVG element instance.
-        /// </summary>
-        public NvgElement()
-        {
-            HyperlinkElements = new List<NvgHyperlinkElement>();
-        }
+        public string Id { get; set; }
 
-        /// <summary>
-        /// The version of this NVG element.
-        /// </summary>
-        public string Version { get; set; }
+        public string Label { get; set; }
 
-        /// <summary>
-        /// The hyperlink elements of this NVG element.
-        /// </summary>
-        public ICollection<NvgHyperlinkElement> HyperlinkElements { get; private set; }
+        public double X { get; set; }
+
+        public double Y { get; set; }
+
+        public string SymbolCode { get; set; }
     }
 }

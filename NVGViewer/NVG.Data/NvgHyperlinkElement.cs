@@ -14,25 +14,28 @@
  * limitations under the License.
  */
 
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.IO;
+using System.Collections.Generic;
 
-namespace NVG.IO.Testing
+namespace NVG.Data
 {
-    [TestClass]
-    public class NvgReaderTestSuite
+    /// <summary>
+    /// Represents a NVG hyperlink element.
+    /// </summary>
+    public class NvgHyperlinkElement
     {
-        [TestMethod]
-        public void TestNvgReadAis()
+        public NvgHyperlinkElement()
         {
-            var aisFile = @"Data\AIS.nvg";
-            Assert.IsTrue(File.Exists(aisFile), @"The NVG file does not exists!");
-
-            var reader = new NvgReader(aisFile);
-            var element = reader.ReadNextElement();
-            Assert.IsNotNull(element, @"The NVG element must not be null!");
-
-            Assert.AreEqual(@"0.3", element.Version, @"The NVG element version is not equal to 0.3!");
+            PointElements = new List<NvgPointElement>();
         }
+
+        /// <summary>
+        /// The link this element refers to.
+        /// </summary>
+        public string Url { get; set; }
+
+        /// <summary>
+        /// The point elements of this hyperlink element.
+        /// </summary>
+        public ICollection<NvgPointElement> PointElements { get; private set; }
     }
 }

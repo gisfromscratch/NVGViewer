@@ -43,6 +43,12 @@
     <Compile Include="NvgReader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NVG.Data\NVG.Data.csproj">
+      <Project>{c928e8ed-e179-45d6-93ee-938690c41309}</Project>
+      <Name>NVG.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

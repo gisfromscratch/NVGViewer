@@ -54,9 +54,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Data\AIS.nvg" />
+    <None Include="Data\AIS.nvg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="Data\Demo-Link16-recording.nvg" />
     <None Include="Data\Demo-NFFI-recording.nvg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NVG.Data\NVG.Data.csproj">
+      <Project>{c928e8ed-e179-45d6-93ee-938690c41309}</Project>
+      <Name>NVG.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NVG.IO\NVG.IO.csproj">
+      <Project>{a3bd70bd-f73a-4f63-a980-1c9fea534d1e}</Project>
+      <Name>NVG.IO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
