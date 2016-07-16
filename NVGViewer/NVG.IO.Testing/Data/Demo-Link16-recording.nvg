@@ -1,0 +1,1463 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<nvg version="0.3">
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=95768918-c090-4fe8-8d1b-f32fe4f7b8db">
+      <point course="328.8" id="95768918-c090-4fe8-8d1b-f32fe4f7b8db"
+             label="AIS:244216000 - Unknown"
+             speed="9.61123110151188"
+             symbol="app6a:SPSP----------C"
+             x="4.082719330949744"
+             y="51.97369599028778"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=c777a164-8056-4430-ad89-76e0e1ef52ab">
+      <point course="190.5" id="c777a164-8056-4430-ad89-76e0e1ef52ab"
+             label="AIS:211169550 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="4.452456501272708"
+             y="51.885934100858464"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=332fea38-58ca-4743-8913-1bb62c727bd2">
+      <point course="49.0" id="332fea38-58ca-4743-8913-1bb62c727bd2"
+             label="AIS:548732000 - Tanker(s) / Carrying DG, HS, or MP, IMO hazard or pollutant category A"
+             speed="0.0"
+             symbol="app6a:SPSPXMH-------C"
+             x="4.2768361733458145"
+             y="51.88006542683428"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=382f16e2-4e3d-49cc-b18b-b78b0c65f754">
+      <point course="175.0" id="382f16e2-4e3d-49cc-b18b-b78b0c65f754"
+             label="AIS:304010161 - Cargo ships / All ships of this type"
+             speed="0.0"
+             symbol="app6a:SPSPXMC-------C"
+             x="3.8484980969725906"
+             y="52.14467074211487"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=8a8749f4-d7fd-4708-a207-2abefbe54249">
+      <point course="191.0" id="8a8749f4-d7fd-4708-a207-2abefbe54249"
+             label="AIS:249720000 - Cargo ships / Carrying DG, HS, or MP, IMO hazard or pollutant category B"
+             speed="9.773218142548597"
+             symbol="app6a:SPSPXMH-------C"
+             x="3.8776161597738366"
+             y="52.059912927140346"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=38e7b8c9-e2a8-4c7c-8f45-ac949968996b">
+      <point course="9.7" id="38e7b8c9-e2a8-4c7c-8f45-ac949968996b"
+             label="AIS:230948000 - Cargo ships / No additional information"
+             speed="21.490280777537798"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.0692868274025225"
+             y="52.407731104818716"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=ead16273-b082-4dbe-9588-c3d6e8a08d7f">
+      <point course="0.1" id="ead16273-b082-4dbe-9588-c3d6e8a08d7f"
+             label="AIS:304677000 - Cargo ships / All ships of this type"
+             speed="0.0"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.354845544984672"
+             y="51.90258525640789"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=1a0c4f00-6720-4a64-9d37-58158f083480">
+      <point course="223.9" id="1a0c4f00-6720-4a64-9d37-58158f083480"
+             label="AIS:304248000 - Cargo ships / All ships of this type"
+             speed="0.0"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.296598690545482"
+             y="51.89166329999725"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=114669d3-5ff9-4268-ad6d-2db736c56b39">
+      <point course="45.9" id="114669d3-5ff9-4268-ad6d-2db736c56b39"
+             label="AIS:450280000 - Unknown"
+             speed="12.203023758099352"
+             symbol="app6a:SPSP----------C"
+             x="3.4451152947613775"
+             y="52.3424032142643"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=16a3c540-d979-4181-9afa-0766f8360540">
+      <point course="272.0" id="16a3c540-d979-4181-9afa-0766f8360540"
+             label="AIS:245381000 - Unknown"
+             speed="12.203023758099352"
+             symbol="app6a:SPSP----------C"
+             x="3.988402127528318"
+             y="52.489849625807956"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=438568a7-8714-48c4-ad3e-f46981ae6883">
+      <point course="300.9" id="438568a7-8714-48c4-ad3e-f46981ae6883"
+             label="AIS:314039000 - Unknown"
+             speed="9.881209503239742"
+             symbol="app6a:SPSP----------C"
+             x="4.208225262655334"
+             y="51.93684243402987"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=4ad67eef-e805-4ca4-ad91-fe1dd149c472">
+      <point course="348.0" id="4ad67eef-e805-4ca4-ad91-fe1dd149c472"
+             label="AIS:245934000 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="3.8381018542112026"
+             y="52.12725783911441"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=de813fc6-cac4-4ae4-91b7-1cff22c47e68">
+      <point course="88.9" id="de813fc6-cac4-4ae4-91b7-1cff22c47e68"
+             label="AIS:354250000 - Unknown"
+             speed="5.72354211663067"
+             symbol="app6a:SPSP----------C"
+             x="3.8834204604280274"
+             y="52.001279831085185"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=86dc82a0-1c6d-4921-bc59-32fb875445f9">
+      <point course="146.8" id="86dc82a0-1c6d-4921-bc59-32fb875445f9"
+             label="AIS:236444000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.232375874064915"
+             y="51.894120203747775"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=d40ddd55-492f-4960-9735-6609cae69e3e">
+      <point course="45.9" id="d40ddd55-492f-4960-9735-6609cae69e3e"
+             label="AIS:477198000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.296469944505093"
+             y="51.88590191434645"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=139f1dee-23b3-44e1-b06b-fef924864f42">
+      <point course="275.0" id="139f1dee-23b3-44e1-b06b-fef924864f42"
+             label="AIS:245679000 - Unknown"
+             speed="22.300215982721383"
+             symbol="app6a:SPSP----------C"
+             x="4.502045184495758"
+             y="52.46816664554675"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=aed0a77f-da1c-4ce4-b658-a34b1dca16f2">
+      <point course="345.0" id="aed0a77f-da1c-4ce4-b658-a34b1dca16f2"
+             label="AIS:564536000 - Cargo ships / All ships of this type"
+             speed="0.0"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.068997148811648"
+             y="51.950167650004346"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=4e2369e6-a070-4a73-926e-e5c5861b59a5">
+      <point course="204.0" id="4e2369e6-a070-4a73-926e-e5c5861b59a5"
+             label="AIS:304523000 - Unknown"
+             speed="9.881209503239742"
+             symbol="app6a:SPSP----------C"
+             x="4.061497691959006"
+             y="52.31199768924686"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=e1667b56-856d-4a6d-8dc4-8e5eb3dfb01b">
+      <point course="124.0" id="e1667b56-856d-4a6d-8dc4-8e5eb3dfb01b"
+             label="AIS:258698000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.2986693560284"
+             y="51.87933586589526"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=fb1b716c-24ef-4968-b539-6891e1653c8a">
+      <point course="221.9" id="fb1b716c-24ef-4968-b539-6891e1653c8a"
+             label="AIS:246229000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.290751474544495"
+             y="51.895665156324526"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=b145d065-5b75-48aa-8d71-b17f402b640a">
+      <point course="107.9" id="b145d065-5b75-48aa-8d71-b17f402b640a"
+             label="AIS:259736000 - Tanker(s) / All ships of this type"
+             speed="12.580993520518359"
+             symbol="app6a:SPSPXMO-------C"
+             x="4.024933816488613"
+             y="51.995218037988906"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=8c344c4f-7b9b-47ac-84cd-b1aaac1d4135">
+      <point course="121.5" id="8c344c4f-7b9b-47ac-84cd-b1aaac1d4135"
+             label="AIS:265380000 - Tanker(s) / All ships of this type"
+             speed="0.0"
+             symbol="app6a:SPSPXMO-------C"
+             x="3.8294651406684603"
+             y="52.106304419792224"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=3697d587-8892-4617-9815-d7e5d79072fc">
+      <point course="135.4" id="3697d587-8892-4617-9815-d7e5d79072fc"
+             label="AIS:235648000 - Cargo ships / Carrying DG, HS, or MP, IMO hazard or pollutant category A"
+             speed="0.2159827213822894"
+             symbol="app6a:SPSPXMH-------C"
+             x="3.8100137597330668"
+             y="52.09791446899348"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=9e3da48d-5749-4fc0-9a62-1763d6e62931">
+      <point course="81.8" id="9e3da48d-5749-4fc0-9a62-1763d6e62931"
+             label="AIS:565423000 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="4.329815168965768"
+             y="52.50482708273257"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=f68e7990-75ef-4203-992d-430272a14a9e">
+      <point course="0.0" id="f68e7990-75ef-4203-992d-430272a14a9e"
+             label="AIS:245340000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.133692034106972"
+             y="51.9722261395724"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=45a1558f-065e-4adb-a5b3-ffd62b7223db">
+      <point course="149.7" id="45a1558f-065e-4adb-a5b3-ffd62b7223db"
+             label="AIS:304736000 - Cargo ships / All ships of this type"
+             speed="5.993520518358531"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.40251376643859"
+             y="51.88933514229478"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=f6e53d79-99de-4548-acce-bbd33b4c32f2">
+      <point course="67.0" id="f6e53d79-99de-4548-acce-bbd33b4c32f2"
+             label="AIS:356768000 - Unknown"
+             speed="3.077753779697624"
+             symbol="app6a:SPSP----------C"
+             x="4.34346224924697"
+             y="51.894999968409536"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=3a25b241-a939-4fe7-a051-284dceebb16a">
+      <point course="58.0" id="3a25b241-a939-4fe7-a051-284dceebb16a"
+             label="AIS:245081000 - Unknown"
+             speed="2.2138228941684663"
+             symbol="app6a:SPSP----------C"
+             x="4.397074246232167"
+             y="51.899216401483585"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=e85ad0fe-6f7e-4cf5-8592-672299c785d3">
+      <point course="230.9" id="e85ad0fe-6f7e-4cf5-8592-672299c785d3"
+             label="AIS:244016000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.569540296169538"
+             y="52.45999127149478"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=c2942228-1da3-4231-99a1-38bef78a16fb">
+      <point course="64.0" id="c2942228-1da3-4231-99a1-38bef78a16fb"
+             label="AIS:258774000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.817923594589448"
+             y="52.404340792219735"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=f28c48e3-2dbb-4333-b00e-debf1b8ee8fd">
+      <point course="249.8" id="f28c48e3-2dbb-4333-b00e-debf1b8ee8fd"
+             label="AIS:244050469 - Unknown"
+             speed="9.017278617710582"
+             symbol="app6a:SPSP----------C"
+             x="4.294978636203924"
+             y="51.8869747980803"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=bc6396fc-9279-49a3-8970-1608bac99d7a">
+      <point course="49.1" id="bc6396fc-9279-49a3-8970-1608bac99d7a"
+             label="AIS:256070000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.338119288570839"
+             y="52.51878530011002"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=6a35a601-6a1c-4a8e-bfbb-484e3f803e95">
+      <point course="125.9" id="6a35a601-6a1c-4a8e-bfbb-484e3f803e95"
+             label="AIS:244050931 - Unknown"
+             speed="3.509719222462203"
+             symbol="app6a:SPSP----------C"
+             x="4.171586285328048"
+             y="51.94779657695253"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=ab438053-6c7a-4694-a244-47688ddb9816">
+      <point course="210.0" id="ab438053-6c7a-4694-a244-47688ddb9816"
+             label="AIS:266234000 - Tanker(s) / All ships of this type"
+             speed="0.0"
+             symbol="app6a:SPSPXMO-------C"
+             x="4.216389907383317"
+             y="52.169432898692236"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=6b8c4887-78c6-4831-a894-3540e0433d32">
+      <point course="350.0" id="6b8c4887-78c6-4831-a894-3540e0433d32"
+             label="AIS:356957000 - Cargo ships / All ships of this type"
+             speed="0.0"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.069211725545629"
+             y="51.96001672268113"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=92d84ade-a6ed-48c6-a552-683d7bb63551">
+      <point id="92d84ade-a6ed-48c6-a552-683d7bb63551" label="AIS:2442006 - Base station"
+             symbol="app6a:SPGPUUSR------C"
+             x="4.254498735338374"
+             y="52.09016824843505"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=e4ff6252-b573-426a-aa42-b495c6e7acdb">
+      <point course="254.7" id="e4ff6252-b573-426a-aa42-b495c6e7acdb"
+             label="AIS:244010025 - Unknown"
+             speed="19.276457883369332"
+             symbol="app6a:SPSP----------C"
+             x="4.550271305458028"
+             y="51.90498851597172"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=3a75477c-f85a-4e57-a7da-e2d9a6bcea99">
+      <point course="167.7" id="3a75477c-f85a-4e57-a7da-e2d9a6bcea99"
+             label="AIS:230169000 - Cargo ships / Carrying DG, HS, or MP, IMO hazard or pollutant category A"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSPXMH-------C"
+             x="4.1308059770349255"
+             y="51.94969558116145"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=2cf8e284-5921-41d9-9764-7af631644888">
+      <point course="338.0" id="2cf8e284-5921-41d9-9764-7af631644888"
+             label="AIS:477158700 - Cargo ships / All ships of this type"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.055918696875495"
+             y="51.9484295783555"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=ae37aa73-70a7-4bc5-bdb1-fc3b9af6d266">
+      <point course="116.0" id="ae37aa73-70a7-4bc5-bdb1-fc3b9af6d266"
+             label="AIS:235032368 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.215295566040013"
+             y="51.91727303472436"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=c05fd132-29e6-4d94-8b2f-97f648c4a405">
+      <point course="185.0" id="c05fd132-29e6-4d94-8b2f-97f648c4a405"
+             label="AIS:565246000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.087515120954223"
+             y="51.94659494717061"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=651abb2e-6b07-4d04-a4f2-0947411ffca2">
+      <point course="331.0" id="651abb2e-6b07-4d04-a4f2-0947411ffca2"
+             label="AIS:352846000 - Unknown"
+             speed="0.2159827213822894"
+             symbol="app6a:SPSP----------C"
+             x="4.586749350234828"
+             y="52.471471127447025"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=76f28540-3564-4b2b-ada0-2d1740a2e475">
+      <point course="46.2" id="76f28540-3564-4b2b-ada0-2d1740a2e475"
+             label="AIS:538090261 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.415914083475714"
+             y="51.881631837085706"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=190b39c4-a802-4c3a-83d2-5130bd97647c">
+      <point course="182.0" id="190b39c4-a802-4c3a-83d2-5130bd97647c"
+             label="AIS:244118000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.05005002320111"
+             y="51.95835375289366"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=54f16bb2-dbfd-4104-8ee2-49f015c7eabe">
+      <point course="336.0" id="54f16bb2-dbfd-4104-8ee2-49f015c7eabe"
+             label="AIS:371976000 - Cargo ships / All ships of this type"
+             speed="0.0"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.115420825208475"
+             y="51.964715953435416"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=35adbdb6-c737-4893-a6b3-d81f20176e18">
+      <point course="316.0" id="35adbdb6-c737-4893-a6b3-d81f20176e18"
+             label="AIS:211229720 - Unknown"
+             speed="0.2159827213822894"
+             symbol="app6a:SPSP----------C"
+             x="4.400335812588681"
+             y="51.88901327717463"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=40a5d5c2-c922-4a0a-a606-bf7fad9c54d6">
+      <point course="276.0" id="40a5d5c2-c922-4a0a-a606-bf7fad9c54d6"
+             label="AIS:538002331 - Tanker(s) / All ships of this type"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSPXMO-------C"
+             x="3.8234677209536865"
+             y="52.11480165896435"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=8cbce681-62b3-41d9-9e56-af80b07cea16">
+      <point course="185.8" id="8cbce681-62b3-41d9-9e56-af80b07cea16"
+             label="AIS:308851000 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="4.376603625810363"
+             y="51.90207027221564"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=33c5c0c7-1702-4f03-9da5-a48e9ac1508c">
+      <point course="0.0" id="33c5c0c7-1702-4f03-9da5-a48e9ac1508c"
+             label="AIS:211193410 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.295912044996742"
+             y="51.88509725154606"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=326e99d1-2f7a-4303-9ff4-8ed1f647d784">
+      <point course="263.0" id="326e99d1-2f7a-4303-9ff4-8ed1f647d784"
+             label="AIS:244972000 - Unknown"
+             speed="0.2159827213822894"
+             symbol="app6a:SPSP----------C"
+             x="4.226668132941016"
+             y="52.57983238456635"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=24bb8d32-4017-4335-9280-609340e664d6">
+      <point course="30.0" id="24bb8d32-4017-4335-9280-609340e664d6"
+             label="AIS:372736000 - Cargo ships / Carrying DG, HS, or MP, IMO hazard or pollutant category A"
+             speed="4.37365010799136"
+             symbol="app6a:SPSPXMH-------C"
+             x="3.6735536857577378"
+             y="51.99346923750272"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=91c71100-940c-4589-94f0-a9bacde5caec">
+      <point course="355.0" id="91c71100-940c-4589-94f0-a9bacde5caec"
+             label="AIS:240503000 - Cargo ships / All ships of this type"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.817118931837019"
+             y="52.4135997788429"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=f36b1115-df55-425d-a32a-5211ca9e5ebd">
+      <point course="6.0" id="f36b1115-df55-425d-a32a-5211ca9e5ebd"
+             label="AIS:244618000 - not available or no ship"
+             speed="11.825053995680346"
+             symbol="app6a:SPSPXM--------C"
+             x="4.042164328227302"
+             y="51.99983143804448"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=60539a46-d301-4f19-9442-0ecb4bbc524d">
+      <point course="183.7" id="60539a46-d301-4f19-9442-0ecb4bbc524d"
+             label="AIS:244020389 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="4.697760623559989"
+             y="51.81964061494358"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=d50395ff-4034-4556-838b-4864a2c47a0e">
+      <point course="265.6" id="d50395ff-4034-4556-838b-4864a2c47a0e"
+             label="AIS:244616000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.095164781520652"
+             y="51.96400785017107"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=ab431974-9a6e-4ea8-a72e-9e0e3a43f724">
+      <point course="128.0" id="ab431974-9a6e-4ea8-a72e-9e0e3a43f724"
+             label="AIS:240292000 - Cargo ships / Carrying DG, HS, or MP, IMO hazard or pollutant category A"
+             speed="0.0"
+             symbol="app6a:SPSPXMH-------C"
+             x="4.825841476073354"
+             y="52.3960366721197"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=eafff953-81d7-4016-bb2b-5104ac78969c">
+      <point course="357.0" id="eafff953-81d7-4016-bb2b-5104ac78969c"
+             label="AIS:304767000 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="4.12732983394443"
+             y="51.95200228118924"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=46cddc32-1dfa-4133-9c62-904a471a20ee">
+      <point course="75.2" id="46cddc32-1dfa-4133-9c62-904a471a20ee"
+             label="AIS:636010720 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="4.259519830913534"
+             y="52.52697140299933"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=3b38950c-d82c-442c-a2cc-ee1a75318a47">
+      <point course="36.3" id="3b38950c-d82c-442c-a2cc-ee1a75318a47"
+             label="AIS:220417000 - Cargo ships / All ships of this type"
+             speed="0.0"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.041466953841863"
+             y="51.9578924128881"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=cc1d0fd8-e9a9-4f24-bdb3-50aa9c93f64b">
+      <point course="56.0" id="cc1d0fd8-e9a9-4f24-bdb3-50aa9c93f64b"
+             label="AIS:636090297 - Unknown"
+             speed="5.075593952483802"
+             symbol="app6a:SPSP----------C"
+             x="3.911637300946552"
+             y="52.00118327154914"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=67c02748-e393-463c-a27b-161329a1b870">
+      <point course="222.0" id="67c02748-e393-463c-a27b-161329a1b870"
+             label="AIS:219359000 - Tanker(s) / No additional information"
+             speed="1.079913606911447"
+             symbol="app6a:SPSPXMO-------C"
+             x="3.802535760553823"
+             y="51.928087702761616"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=54c69097-5929-44ac-8e6b-c9231ec23da8">
+      <point course="78.6" id="54c69097-5929-44ac-8e6b-c9231ec23da8"
+             label="AIS:245842000 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="4.064115528113576"
+             y="51.93714284147535"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=261cc837-e5b3-4bf6-be9c-a59e298ca821">
+      <point course="283.0" id="261cc837-e5b3-4bf6-be9c-a59e298ca821"
+             label="AIS:304749000 - Unknown"
+             speed="8.423326133909287"
+             symbol="app6a:SPSP----------C"
+             x="4.498547583731865"
+             y="52.47075229534534"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=95c5c76c-8db8-4ea3-90ad-4ec995c1e16f">
+      <point course="302.2" id="95c5c76c-8db8-4ea3-90ad-4ec995c1e16f"
+             label="AIS:245566000 - Unknown"
+             speed="14.200863930885529"
+             symbol="app6a:SPSP----------C"
+             x="4.2584040318968315"
+             y="51.909108389509726"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=6a3ffccb-8b49-46a5-a967-89eb3655e622">
+      <point course="240.5" id="6a3ffccb-8b49-46a5-a967-89eb3655e622"
+             label="AIS:205008600 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.205575239990666"
+             y="51.91528819981673"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=7852b082-7f8e-4d70-9dbb-6e601c76d791">
+      <point course="93.0" id="7852b082-7f8e-4d70-9dbb-6e601c76d791"
+             label="AIS:538002969 - Unknown"
+             speed="12.796976241900648"
+             symbol="app6a:SPSP----------C"
+             x="3.950003620982386"
+             y="52.006161452074224"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=75ec266d-e574-448c-bc1a-f1d593d0a82c">
+      <point course="187.0" id="75ec266d-e574-448c-bc1a-f1d593d0a82c"
+             label="AIS:259762000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.117791898118967"
+             y="51.9642653422672"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=01ba8c54-365f-4671-9c21-7efd50bd38da">
+      <point course="225.0" id="01ba8c54-365f-4671-9c21-7efd50bd38da"
+             label="AIS:245907000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.138745316192229"
+             y="51.961915726890055"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=5832253d-c1fe-443f-b12c-54d6c8668f32">
+      <point course="255.0" id="5832253d-c1fe-443f-b12c-54d6c8668f32"
+             label="AIS:304837000 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="4.571804080713039"
+             y="51.90078281173501"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=d5e0ee28-5e89-4f20-b806-0653ab17c6ee">
+      <point course="308.6" id="d5e0ee28-5e89-4f20-b806-0653ab17c6ee"
+             label="AIS:246231000 - Unknown"
+             speed="11.177105831533478"
+             symbol="app6a:SPSP----------C"
+             x="4.1452362623951595"
+             y="51.965306039489036"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=7b67b4ed-1f3c-4d5b-930f-a5c61567ddda">
+      <point course="297.2" id="7b67b4ed-1f3c-4d5b-930f-a5c61567ddda"
+             label="AIS:235027442 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.807312775094079"
+             y="52.41789131377832"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=d8400a9b-3622-4886-958c-b60bd3c6353a">
+      <point course="161.7" id="d8400a9b-3622-4886-958c-b60bd3c6353a"
+             label="AIS:240619000 - Tanker(s) / All ships of this type"
+             speed="0.7019438444924406"
+             symbol="app6a:SPSPXMO-------C"
+             x="4.208193076145236"
+             y="51.92110322965422"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=d650f1db-8b48-4118-b980-81440cd3d536">
+      <point course="218.6" id="d650f1db-8b48-4118-b980-81440cd3d536"
+             label="AIS:244041000 - Unknown"
+             speed="0.32397408207343414"
+             symbol="app6a:SPSP----------C"
+             x="4.877093128984757"
+             y="52.404330063382396"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=ccc2bb07-2132-4517-88f8-5a0e12dc21f1">
+      <point course="13.0" id="ccc2bb07-2132-4517-88f8-5a0e12dc21f1"
+             label="AIS:219675000 - Tanker(s) / All ships of this type"
+             speed="13.012958963282937"
+             symbol="app6a:SPSPXMO-------C"
+             x="4.035426618780293"
+             y="52.226231363562505"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=def9f999-1127-4289-a10a-8b53381c25d8">
+      <point course="278.1" id="def9f999-1127-4289-a10a-8b53381c25d8"
+             label="AIS:353864000 - Tugs"
+             speed="0.0"
+             symbol="app6a:SPSPXMTU------C"
+             x="4.380584024225714"
+             y="51.90407656479795"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=1556aef8-8d6c-49fc-ac32-d305aab1c7e2">
+      <point course="34.2" id="1556aef8-8d6c-49fc-ac32-d305aab1c7e2"
+             label="AIS:257912000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.301072615448989"
+             y="51.87974356171412"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=bfd9f06a-b342-42b0-b3b9-abf39621f054">
+      <point course="26.0" id="bfd9f06a-b342-42b0-b3b9-abf39621f054"
+             label="AIS:256091000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.144646176376711"
+             y="51.951068872340784"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=bbef2783-5369-459e-b3b4-c90deb37e886">
+      <point course="107.0" id="bbef2783-5369-459e-b3b4-c90deb37e886"
+             label="AIS:244390000 - Vessel / Engaged in dredging or underwater operations"
+             speed="9.61123110151188"
+             symbol="app6a:SPSPXM--------C"
+             x="4.089821820844521"
+             y="51.98217177178523"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=a0a6a4a7-d771-4a8a-838d-b19ddc07efe9">
+      <point course="125.3" id="a0a6a4a7-d771-4a8a-838d-b19ddc07efe9"
+             label="AIS:244084000 - Unknown"
+             speed="8.69330453563715"
+             symbol="app6a:SPSP----------C"
+             x="4.191681396465385"
+             y="51.79785034630899"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=6b67b288-1562-41d7-9f8a-ee129e8ae843">
+      <point course="37.0" id="6b67b288-1562-41d7-9f8a-ee129e8ae843"
+             label="AIS:244603000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.140419014717282"
+             y="51.96122908130039"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=bb1813be-dd90-4ae0-b56e-f50cd81a28c4">
+      <point course="97.0" id="bb1813be-dd90-4ae0-b56e-f50cd81a28c4"
+             label="AIS:235800000 - Unknown"
+             speed="0.32397408207343414"
+             symbol="app6a:SPSP----------C"
+             x="4.04514694482964"
+             y="51.946841710429396"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=c542966a-6f8f-44c1-956a-b1a560bebf52">
+      <point course="144.0" id="c542966a-6f8f-44c1-956a-b1a560bebf52"
+             label="AIS:235013705 - Cargo ships / All ships of this type"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.062634948649106"
+             y="51.95938372127816"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=361200d2-a31f-4015-8069-9f0091c6cc3f">
+      <point course="224.0" id="361200d2-a31f-4015-8069-9f0091c6cc3f"
+             label="AIS:358628000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.449999597668624"
+             y="51.885333285967505"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=a5bb0264-d8b8-4bc7-9129-1ab4e4431538">
+      <point course="135.0" id="a5bb0264-d8b8-4bc7-9129-1ab4e4431538"
+             label="AIS:234554000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.417534137817272"
+             y="51.904248226195364"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=ea249595-23f0-4cba-8e31-979285b9be47">
+      <point course="293.0" id="ea249595-23f0-4cba-8e31-979285b9be47"
+             label="AIS:245127000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.237933411475027"
+             y="51.89443134003059"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=12d4095d-8e34-43fc-97f7-50b179f4b686">
+      <point course="239.2" id="12d4095d-8e34-43fc-97f7-50b179f4b686"
+             label="AIS:305156000 - Unknown"
+             speed="0.91792656587473"
+             symbol="app6a:SPSP----------C"
+             x="4.049631598569847"
+             y="51.94675587973069"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=c0911e67-d55a-4c7d-920d-620d895ae58a">
+      <point course="201.4" id="c0911e67-d55a-4c7d-920d-620d895ae58a"
+             label="AIS:245444000 - Unknown"
+             speed="8.423326133909287"
+             symbol="app6a:SPSP----------C"
+             x="4.2900111848122595"
+             y="52.55741984336613"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=e0123134-54b1-47aa-b41b-6e5ea62f7ce2">
+      <point course="144.0" id="e0123134-54b1-47aa-b41b-6e5ea62f7ce2"
+             label="AIS:636090820 - Cargo ships / All ships of this type"
+             speed="0.0"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.111333138426134"
+             y="51.96616434647612"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=be3c1041-26b0-47ca-96d5-861f9a5bc39b">
+      <point course="309.0" id="be3c1041-26b0-47ca-96d5-861f9a5bc39b"
+             label="AIS:257486000 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="4.231335176905106"
+             y="52.542667692025624"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=4f5d290f-00f0-4680-84af-3c32a013ff8e">
+      <point course="183.0" id="4f5d290f-00f0-4680-84af-3c32a013ff8e"
+             label="AIS:304176000 - Unknown"
+             speed="11.01511879049676"
+             symbol="app6a:SPSP----------C"
+             x="3.916014666319768"
+             y="52.27691439114981"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=61ab3001-98b0-4eb5-b01c-d7b92905322b">
+      <point course="358.0" id="61ab3001-98b0-4eb5-b01c-d7b92905322b"
+             label="AIS:257381000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.5688321929474"
+             y="52.46117144360202"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=b7838d34-520e-47f1-8131-cf5cf4f01911">
+      <point course="81.0" id="b7838d34-520e-47f1-8131-cf5cf4f01911"
+             label="AIS:244030940 - Unknown"
+             speed="13.120950323974082"
+             symbol="app6a:SPSP----------C"
+             x="4.55310371834658"
+             y="51.90494560062237"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=45ef26d3-0796-42b4-b9d5-aacd8fea7397">
+      <point course="349.7" id="45ef26d3-0796-42b4-b9d5-aacd8fea7397"
+             label="AIS:205349000 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="4.471349982699751"
+             y="51.9032289866482"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=da8c41af-1f13-4f4f-ab18-a19dd7ec92df">
+      <point course="238.8" id="da8c41af-1f13-4f4f-ab18-a19dd7ec92df"
+             label="AIS:311653000 - Cargo ships / No additional information"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.365102312868972"
+             y="51.904838312248984"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=763bc187-c414-494f-ab1d-22386dcefc7b">
+      <point course="333.0" id="763bc187-c414-494f-ab1d-22386dcefc7b"
+             label="AIS:538090310 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.187003623664595"
+             y="51.93728231636075"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=c801fdc7-7c74-49b4-8b77-4108223a0c2c">
+      <point course="0.0" id="c801fdc7-7c74-49b4-8b77-4108223a0c2c"
+             label="AIS:538001886 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.199685108642883"
+             y="52.19278957757825"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=b7d14583-8cac-4967-9475-687998d28b6d">
+      <point course="29.0" id="b7d14583-8cac-4967-9475-687998d28b6d"
+             label="AIS:245749000 - Unknown"
+             speed="17.22462203023758"
+             symbol="app6a:SPSP----------C"
+             x="3.7374975524841285"
+             y="52.31500176370165"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=49cb23b3-57b1-43e9-9d72-f06657cf2834">
+      <point course="168.6" id="49cb23b3-57b1-43e9-9d72-f06657cf2834"
+             label="AIS:261219000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.353375694356901"
+             y="51.9042589550327"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=15835c92-57cf-4bfd-ac16-8655093fa24d">
+      <point course="108.7" id="15835c92-57cf-4bfd-ac16-8655093fa24d"
+             label="AIS:211444000 - Unknown"
+             speed="9.017278617710582"
+             symbol="app6a:SPSP----------C"
+             x="4.058954957661329"
+             y="51.987546919291844"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=d1e55380-74ce-4141-88f1-2f3227e7a2de">
+      <point course="163.0" id="d1e55380-74ce-4141-88f1-2f3227e7a2de"
+             label="AIS:211362460 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.768131063469116"
+             y="52.42116360916658"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=983d4d70-c0a2-4484-99f4-adfad6f31e4c">
+      <point course="274.1" id="983d4d70-c0a2-4484-99f4-adfad6f31e4c"
+             label="AIS:246021000 - Vessel / Fishing"
+             speed="8.909287257019438"
+             symbol="app6a:SPSPXF--------C"
+             x="3.6653032103361616"
+             y="52.165602703762374"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=ec9d0332-7208-4814-aa2f-654c23501c09">
+      <point course="107.8" id="ec9d0332-7208-4814-aa2f-654c23501c09"
+             label="AIS:210647000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="3.7544383856319423"
+             y="51.93323754468412"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=967cd5d4-a116-4f0c-9580-eca396ae6a56">
+      <point course="196.0" id="967cd5d4-a116-4f0c-9580-eca396ae6a56"
+             label="AIS:255802890 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="4.356948396977687"
+             y="51.900986659644445"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=2f7f3885-d376-4742-9578-9a8a43b8211c">
+      <point course="283.0" id="2f7f3885-d376-4742-9578-9a8a43b8211c"
+             label="AIS:244391000 - Unknown"
+             speed="7.613390928725702"
+             symbol="app6a:SPSP----------C"
+             x="4.503997832774987"
+             y="51.91866778357837"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=acb2942d-73b1-45b4-a03f-fd6229699cec">
+      <point course="180.0" id="acb2942d-73b1-45b4-a03f-fd6229699cec"
+             label="AIS:565506000 - Unknown"
+             speed="11.609071274298056"
+             symbol="app6a:SPSP----------C"
+             x="4.513170988152682"
+             y="52.5753370017215"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=72064435-d71f-4b98-8d78-452ac7c97abc">
+      <point course="185.0" id="72064435-d71f-4b98-8d78-452ac7c97abc"
+             label="AIS:209448000 - Tanker(s) / All ships of this type"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSPXMO-------C"
+             x="4.160664329568406"
+             y="51.94469594296169"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=a7abb0ae-23c8-4460-a3c5-afa8d700fca9">
+      <point course="0.0" id="a7abb0ae-23c8-4460-a3c5-afa8d700fca9"
+             label="AIS:403545000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="3.712263328567942"
+             y="51.949502462089356"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=bdbfadd6-e59b-45dd-9c32-44525bf98ff5">
+      <point course="30.1" id="bdbfadd6-e59b-45dd-9c32-44525bf98ff5"
+             label="AIS:304255000 - Cargo ships / All ships of this type"
+             speed="0.0"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.451812771070765"
+             y="51.894484984217286"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=c86e948f-0006-4974-8ddf-0ae57a37f79f">
+      <point course="241.2" id="c86e948f-0006-4974-8ddf-0ae57a37f79f"
+             label="AIS:304010695 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="4.412480855732015"
+             y="51.87974356171412"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=258875bc-ce5a-4152-b5ea-1fb6a398ef38">
+      <point course="3.5" id="258875bc-ce5a-4152-b5ea-1fb6a398ef38"
+             label="AIS:244619000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.140579947267768"
+             y="51.96115397943902"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=026d01bc-8c56-455d-a2ec-2ccd0ee97471">
+      <point course="235.0" id="026d01bc-8c56-455d-a2ec-2ccd0ee97471"
+             label="AIS:215050000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.126782663272778"
+             y="51.96086430083088"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=afa0c8fa-d609-42b1-b649-9077473a44a7">
+      <point course="313.6" id="afa0c8fa-d609-42b1-b649-9077473a44a7"
+             label="AIS:538001919 - Tanker(s) / All ships of this type"
+             speed="9.39524838012959"
+             symbol="app6a:SPSPXMO-------C"
+             x="3.954584834252884"
+             y="52.02781224582341"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=5f72ac63-c2a0-448e-81d5-d5d7f39aa059">
+      <point course="240.4" id="5f72ac63-c2a0-448e-81d5-d5d7f39aa059"
+             label="AIS:246115000 - Unknown"
+             speed="0.2159827213822894"
+             symbol="app6a:SPSP----------C"
+             x="4.8743680044631965"
+             y="52.40302114522709"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=8a5177f5-40b4-4e2d-8303-b4e3cfbb9903">
+      <point course="240.6" id="8a5177f5-40b4-4e2d-8303-b4e3cfbb9903"
+             label="AIS:311923000 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="3.820431460167853"
+             y="52.103997719764436"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=f5c9738e-92cb-467f-a289-991fcdb33c5c">
+      <point course="68.0" id="f5c9738e-92cb-467f-a289-991fcdb33c5c"
+             label="AIS:351928000 - Unknown"
+             speed="13.98488120950324"
+             symbol="app6a:SPSP----------C"
+             x="3.505561560723875"
+             y="51.932518712582436"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=80740d74-df69-4c4c-b4d0-755a100cab21">
+      <point course="70.1" id="80740d74-df69-4c4c-b4d0-755a100cab21"
+             label="AIS:304159000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.435783889042371"
+             y="51.89120195999169"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=7b182135-8b75-44c4-b485-b19c1a56598d">
+      <point course="102.9" id="7b182135-8b75-44c4-b485-b19c1a56598d"
+             label="AIS:353001000 - Unknown"
+             speed="7.775377969762419"
+             symbol="app6a:SPSP----------C"
+             x="4.081946854707412"
+             y="51.98342704575384"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=9e56e9e2-b7b7-4c24-a05d-9280b49d1a34">
+      <point course="330.0" id="9e56e9e2-b7b7-4c24-a05d-9280b49d1a34"
+             label="AIS:240628000 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="3.735952599999464"
+             y="51.94793605183793"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=6b4ab9ed-2981-4e0b-b44e-9c121ab7250d">
+      <point course="15.0" id="6b4ab9ed-2981-4e0b-b44e-9c121ab7250d"
+             label="AIS:209506000 - Cargo ships / All ships of this type"
+             speed="16.198704103671705"
+             symbol="app6a:SPSPXMC-------C"
+             x="3.9643373468123286"
+             y="52.104662907679426"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=f5bed080-b75b-4b04-ad38-aea9313c975e">
+      <point course="269.0" id="f5bed080-b75b-4b04-ad38-aea9313c975e"
+             label="AIS:244180000 - Unknown"
+             speed="1.2958963282937366"
+             symbol="app6a:SPSP----------C"
+             x="4.402663970152377"
+             y="51.88066624172524"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=7f774f05-dc6a-4998-94e2-4b3ecaef0be5">
+      <point course="219.0" id="7f774f05-dc6a-4998-94e2-4b3ecaef0be5"
+             label="AIS:211728000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="3.822480667977373"
+             y="52.141237514166534"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=ccbd16e0-6ac6-49f4-9a12-4df590bc2624">
+      <point course="147.1" id="ccbd16e0-6ac6-49f4-9a12-4df590bc2624"
+             label="AIS:244067000 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="3.853626480914741"
+             y="52.13336254756004"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=a18a6444-117b-4e20-a8da-b214afdbb68e">
+      <point course="192.0" id="a18a6444-117b-4e20-a8da-b214afdbb68e"
+             label="AIS:538002045 - Unknown"
+             speed="2.321814254859611"
+             symbol="app6a:SPSP----------C"
+             x="3.795637118556328"
+             y="52.13870550855464"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=8dce2c0c-b3f0-4e06-ab00-d92c77650a2d">
+      <point course="266.0" id="8dce2c0c-b3f0-4e06-ab00-d92c77650a2d"
+             label="AIS:255714000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.284088866954379"
+             y="51.88706062877901"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=01f3fbdc-b328-4f60-8cca-4febd3c446a3">
+      <point course="115.0" id="01f3fbdc-b328-4f60-8cca-4febd3c446a3"
+             label="AIS:235012220 - Unknown"
+             speed="9.61123110151188"
+             symbol="app6a:SPSP----------C"
+             x="4.066497329860767"
+             y="51.9818284489904"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=ec044566-b425-40b6-a723-4ebbc4ad23bc">
+      <point course="97.0" id="ec044566-b425-40b6-a723-4ebbc4ad23bc"
+             label="AIS:244514000 - Unknown"
+             speed="5.72354211663067"
+             symbol="app6a:SPSP----------C"
+             x="4.322337169786524"
+             y="51.89349793118214"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=bab33bc6-b05c-47c0-a188-6ab41897b0ef">
+      <point course="0.0" id="bab33bc6-b05c-47c0-a188-6ab41897b0ef"
+             label="AIS:236300000 - Cargo ships / All ships of this type"
+             speed="0.0"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.433552291008967"
+             y="51.892049538141436"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=fac63417-7d30-4135-8bb6-384ef549fcba">
+      <point course="135.0" id="fac63417-7d30-4135-8bb6-384ef549fcba"
+             label="AIS:352577000 - Cargo ships / All ships of this type"
+             speed="0.0"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.058171752582298"
+             y="51.93849467498001"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=1a2c2282-8749-4023-ba9b-ce4528020ec2">
+      <point course="215.9" id="1a2c2282-8749-4023-ba9b-ce4528020ec2"
+             label="AIS:308464000 - Tugs"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSPXMTU------C"
+             x="4.1401186072897085"
+             y="51.96142220037248"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=7abeb4ae-d5c0-4c31-9c90-dcf194c4340d">
+      <point course="133.4" id="7abeb4ae-d5c0-4c31-9c90-dcf194c4340d"
+             label="AIS:565427000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="3.8107218629552047"
+             y="52.11114312543191"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=99fa20f3-9a3e-462b-8654-79ab1ff26dfa">
+      <point course="312.0" id="99fa20f3-9a3e-462b-8654-79ab1ff26dfa"
+             label="AIS:245413000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.855163386771881"
+             y="52.40317134894983"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=07f126de-9117-4725-9182-3b48017b8e85">
+      <point course="46.0" id="07f126de-9117-4725-9182-3b48017b8e85"
+             label="AIS:636012994 - Unknown"
+             speed="23.38012958963283"
+             symbol="app6a:SPSP----------C"
+             x="3.466004339814445"
+             y="52.37333445231133"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=bba939d8-cc4c-4106-997c-6b1d50a66f52">
+      <point course="300.0" id="bba939d8-cc4c-4106-997c-6b1d50a66f52"
+             label="AIS:219033000 - Unknown"
+             speed="8.207343412526997"
+             symbol="app6a:SPSP----------C"
+             x="4.441437985982775"
+             y="52.4970701333368"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=c948fea6-74d0-495e-a7ca-a78d70c5617f">
+      <point course="324.0" id="c948fea6-74d0-495e-a7ca-a78d70c5617f"
+             label="AIS:305083000 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="4.271332280119197"
+             y="51.89166329999725"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=4008244d-7363-4b62-b8f0-50e0a34cf21d">
+      <point course="202.7" id="4008244d-7363-4b62-b8f0-50e0a34cf21d"
+             label="AIS:367059460 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="4.443648126342781"
+             y="51.89827226379779"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=b5d77917-9c10-451c-b4ef-4d8af7565edd">
+      <point course="90.0" id="b5d77917-9c10-451c-b4ef-4d8af7565edd"
+             label="AIS:636091038 - Cargo ships / Carrying DG, HS, or MP, IMO hazard or pollutant category A"
+             speed="0.0"
+             symbol="app6a:SPSPXMH-------C"
+             x="4.396999144375274"
+             y="51.88103102219475"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=90fbe484-467d-48a2-8b92-1b43540fdd80">
+      <point course="169.5" id="90fbe484-467d-48a2-8b92-1b43540fdd80"
+             label="AIS:258850000 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="4.3445887771003715"
+             y="51.889324413457445"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=41c44dcc-3e7e-426d-ab8e-17f49df4b102">
+      <point course="238.0" id="41c44dcc-3e7e-426d-ab8e-17f49df4b102"
+             label="AIS:304010715 - Cargo ships / All ships of this type"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.05939483996599"
+             y="51.95916914453139"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=15cc1d68-596c-4e24-a468-0be87de856cc">
+      <point course="314.0" id="15cc1d68-596c-4e24-a468-0be87de856cc"
+             label="AIS:244885000 - Cargo ships / No additional information"
+             speed="1.4038876889848813"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.3643083789532415"
+             y="51.903046596413446"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=459088a6-291d-484f-ac24-0952178de56a">
+      <point course="308.3" id="459088a6-291d-484f-ac24-0952178de56a"
+             label="AIS:244003000 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="3.8461377528987977"
+             y="52.10514570535966"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=ebd5334c-0b88-4855-aefa-07e049d090de">
+      <point id="ebd5334c-0b88-4855-aefa-07e049d090de" label="AIS:304824000 - Unknown"
+             symbol="app6a:SPSP----------C"
+             x="4.050597193872762"
+             y="51.96164750595659"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=72706e61-67ec-4095-90b8-e5ac4c3c0550">
+      <point course="182.3" id="72706e61-67ec-4095-90b8-e5ac4c3c0550"
+             label="AIS:211264800 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="4.474364785812186"
+             y="51.904173124333994"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=b115f4fe-d056-4a86-957f-146e599bd0e9">
+      <point course="66.9" id="b115f4fe-d056-4a86-957f-146e599bd0e9"
+             label="AIS:253089000 - Tanker(s) / Carrying DG, HS, or MP, IMO hazard or pollutant category A"
+             speed="12.688984881209503"
+             symbol="app6a:SPSPXMH-------C"
+             x="3.670088271503942"
+             y="52.34678057989843"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=8a31a2b2-1ac8-44ab-a8c5-91aa587573d0">
+      <point course="336.6" id="8a31a2b2-1ac8-44ab-a8c5-91aa587573d0"
+             label="AIS:244060760 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.805875110976405"
+             y="52.417344143074054"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=c89307fc-b98a-4a9b-b2f4-631656b2c2aa">
+      <point course="287.3" id="c89307fc-b98a-4a9b-b2f4-631656b2c2aa"
+             label="AIS:230984000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.415892625802316"
+             y="51.87951825613001"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=bf587dd3-1647-45d3-a7b0-8938f371556e">
+      <point course="199.0" id="bf587dd3-1647-45d3-a7b0-8938f371556e"
+             label="AIS:256227000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.272662655869881"
+             y="51.892500149309654"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=2e7a6d0a-8395-4bdf-bcde-5182c820331c">
+      <point course="120.4" id="2e7a6d0a-8395-4bdf-bcde-5182c820331c"
+             label="AIS:235791000 - Cargo ships / All ships of this type"
+             speed="9.39524838012959"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.1282632427372485"
+             y="51.9714751209587"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=1e135f6f-9c95-403f-8d7c-d3b36c4c386c">
+      <point course="12.0" id="1e135f6f-9c95-403f-8d7c-d3b36c4c386c"
+             label="AIS:236243000 - Unknown"
+             speed="16.52267818574514"
+             symbol="app6a:SPSP----------C"
+             x="4.099499231547072"
+             y="52.53950268501075"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=d490f6b3-31a7-4959-b448-f3c5cfc2cd42">
+      <point course="271.8" id="d490f6b3-31a7-4959-b448-f3c5cfc2cd42"
+             label="AIS:258924000 - Tanker(s) / Carrying DG, HS, or MP, IMO hazard or pollutant category C"
+             speed="0.0"
+             symbol="app6a:SPSPXMH-------C"
+             x="4.30630828775813"
+             y="51.88153527754966"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=c8db3a50-8380-4808-89d9-4aa4926bf683">
+      <point course="0.0" id="c8db3a50-8380-4808-89d9-4aa4926bf683"
+             label="AIS:304050864 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="3.8103463536707376"
+             y="52.12354566139527"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=722d962f-03d8-4730-8355-3abe8caa0c9c">
+      <point course="328.0" id="722d962f-03d8-4730-8355-3abe8caa0c9c"
+             label="AIS:419567000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.02233743800744"
+             y="52.455667550047345"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=e4623962-5f87-4552-93ef-a94c88f96c5f">
+      <point course="56.9" id="e4623962-5f87-4552-93ef-a94c88f96c5f"
+             label="AIS:636091405 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.042614939368662"
+             y="51.94683098159206"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=4779faca-9be5-45a7-8f58-1b1856838905">
+      <point course="145.2" id="4779faca-9be5-45a7-8f58-1b1856838905"
+             label="AIS:247278000 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="3.82775925563331"
+             y="51.948483222542194"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=bb7e67bd-9c99-4fab-a92b-65c5ea581ba5">
+      <point course="300.0" id="bb7e67bd-9c99-4fab-a92b-65c5ea581ba5"
+             label="AIS:565611000 - Tanker(s) / All ships of this type"
+             speed="0.0"
+             symbol="app6a:SPSPXMO-------C"
+             x="3.833821048368278"
+             y="52.09767843457203"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=6947c819-c2e5-4647-940f-50db912fec23">
+      <point course="186.5" id="6947c819-c2e5-4647-940f-50db912fec23"
+             label="AIS:244010965 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="4.503332644899645"
+             y="51.91933297149336"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=0e406498-ae3a-44e3-b494-7067342c4012">
+      <point course="199.6" id="0e406498-ae3a-44e3-b494-7067342c4012"
+             label="AIS:265889000 - Tanker(s) / All ships of this type"
+             speed="0.0"
+             symbol="app6a:SPSPXMO-------C"
+             x="3.831374873600893"
+             y="52.13470365222736"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=7b812faf-695f-4110-86e3-1f7fcd46e77e">
+      <point course="190.7" id="7b812faf-695f-4110-86e3-1f7fcd46e77e"
+             label="AIS:371644000 - Unknown"
+             speed="1.7818574514038876"
+             symbol="app6a:SPSP----------C"
+             x="4.175749073967283"
+             y="52.555295533573094"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=cf2e5b22-f15e-4682-97a6-a7c9240ce18a">
+      <point course="110.0" id="cf2e5b22-f15e-4682-97a6-a7c9240ce18a"
+             label="AIS:636090797 - Cargo ships / Carrying DG, HS, or MP, IMO hazard or pollutant category B"
+             speed="11.123110151187905"
+             symbol="app6a:SPSPXMH-------C"
+             x="4.042604210531963"
+             y="51.9896497714102"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=041ce22a-e5b8-4ddc-929e-f62ae5a9f0b5">
+      <point course="0.0" id="041ce22a-e5b8-4ddc-929e-f62ae5a9f0b5"
+             label="AIS:309742000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.16096473699598"
+             y="51.94126271501335"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=3f4d1b8a-ed68-4cae-884e-b3401dee8c62">
+      <point course="149.7" id="3f4d1b8a-ed68-4cae-884e-b3401dee8c62"
+             label="AIS:273318550 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.287575738881573"
+             y="51.88768290134465"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=679bc7ba-59bf-4cd1-b6e6-350944623a4d">
+      <point course="194.0" id="679bc7ba-59bf-4cd1-b6e6-350944623a4d"
+             label="AIS:636091158 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.405614400244618"
+             y="51.87982939241283"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=d27fcf2e-5c04-4d80-aa67-2df0a77f7205">
+      <point course="219.4" id="d27fcf2e-5c04-4d80-aa67-2df0a77f7205"
+             label="AIS:244787000 - Search and rescue vessels"
+             speed="0.0"
+             symbol="app6a:SPSPNNR-------C"
+             x="4.263682619552768"
+             y="52.09922338714878"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=8cf29fe1-047b-4dd3-92a9-c8957674ea55">
+      <point course="0.0" id="8cf29fe1-047b-4dd3-92a9-c8957674ea55"
+             label="AIS:21142690 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.367527029962959"
+             y="51.892500149309654"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=9160f151-cb80-4560-99f0-06e6c31e0c15">
+      <point course="281.2" id="9160f151-cb80-4560-99f0-06e6c31e0c15"
+             label="AIS:256735000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.31257392839038"
+             y="51.872480138835925"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=4fb697f8-eb14-4fb3-8872-6083d642b238">
+      <point course="295.9" id="4fb697f8-eb14-4fb3-8872-6083d642b238"
+             label="AIS:304270000 - Unknown"
+             speed="10.097192224622031"
+             symbol="app6a:SPSP----------C"
+             x="3.687072019998552"
+             y="52.13365222616818"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=9242337d-a954-40f8-bb08-0e0ed5b64653">
+      <point course="244.0" id="9242337d-a954-40f8-bb08-0e0ed5b64653"
+             label="AIS:258726000 - Tanker(s) / Reserved for future use"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSPXMO-------C"
+             x="4.341230651213566"
+             y="51.89224265721353"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=81c56887-8da0-4bac-9e24-06db5224c01e">
+      <point course="0.0" id="81c56887-8da0-4bac-9e24-06db5224c01e"
+             label="AIS:220235000 - Tanker(s) / Reserved for future use"
+             speed="0.0"
+             symbol="app6a:SPSPXMO-------C"
+             x="3.8543774994836753"
+             y="52.12658192236208"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=c292eca6-548e-4e8b-8c38-b4faa1eb73be">
+      <point course="209.0" id="c292eca6-548e-4e8b-8c38-b4faa1eb73be"
+             label="AIS:210374000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.273338572581921"
+             y="51.88766144366997"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=f2df6e7b-9ff0-48cd-a5f7-ac6b9468eca2">
+      <point course="193.0" id="f2df6e7b-9ff0-48cd-a5f7-ac6b9468eca2"
+             label="AIS:245199000 - Cargo ships / All ships of this type"
+             speed="8.801295896328293"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.1559972856043155"
+             y="52.2520020308497"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=7175b59d-6353-41f6-b9cb-9ebae426910b">
+      <point course="79.0" id="7175b59d-6353-41f6-b9cb-9ebae426910b"
+             label="AIS:256784000 - Tanker(s) / Reserved for future use"
+             speed="0.2159827213822894"
+             symbol="app6a:SPSPXMO-------C"
+             x="4.232332958718119"
+             y="52.20416214515711"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=005ce291-b028-4dfa-88f3-b6d7a5860eb3">
+      <point course="42.0" id="005ce291-b028-4dfa-88f3-b6d7a5860eb3"
+             label="AIS:244949000 - Unknown"
+             speed="3.2937365010799136"
+             symbol="app6a:SPSP----------C"
+             x="3.9066591207181887"
+             y="52.00278186831258"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=bc93e6e8-5ebd-4b60-9bc6-4a6ac4e0f0c4">
+      <point course="156.8" id="bc93e6e8-5ebd-4b60-9bc6-4a6ac4e0f0c4"
+             label="AIS:304010795 - Cargo ships / All ships of this type"
+             speed="7.775377969762419"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.08641005077422"
+             y="51.97068118699565"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=68e0c9d2-7e3a-4dbc-a157-a099c8c641f7">
+      <point course="190.3" id="68e0c9d2-7e3a-4dbc-a157-a099c8c641f7"
+             label="AIS:224585000 - Unknown"
+             speed="5.993520518358531"
+             symbol="app6a:SPSP----------C"
+             x="3.889729016407074"
+             y="52.14503552258438"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=facbd457-3960-4272-b204-7fafe455146a">
+      <point course="68.0" id="facbd457-3960-4272-b204-7fafe455146a"
+             label="AIS:256224000 - Cargo ships / All ships of this type"
+             speed="0.0"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.044664147178183"
+             y="51.93550132936255"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=93f5923d-cc76-45d7-9722-a5bf7fd32d10">
+      <point course="239.0" id="93f5923d-cc76-45d7-9722-a5bf7fd32d10"
+             label="AIS:246137000 - Unknown"
+             speed="26.18790496760259"
+             symbol="app6a:SPSP----------C"
+             x="3.9318182427774815"
+             y="52.01148295539414"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=7528089d-9c95-4810-b787-478e285f8cd0">
+      <point course="127.0" id="7528089d-9c95-4810-b787-478e285f8cd0"
+             label="AIS:304010893 - Unknown"
+             speed="9.1792656587473"
+             symbol="app6a:SPSP----------C"
+             x="3.7964954254922527"
+             y="52.07345271986159"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=09b5b07a-9426-4a81-bf38-90db021a972c">
+      <point course="195.8" id="09b5b07a-9426-4a81-bf38-90db021a972c"
+             label="AIS:440531000 - Unknown"
+             speed="0.1079913606911447"
+             symbol="app6a:SPSP----------C"
+             x="4.048955681857806"
+             y="51.936509840072375"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=2f828cce-a1cb-4ea2-bb08-c2f8e553368e">
+      <point course="44.8" id="2f828cce-a1cb-4ea2-bb08-c2f8e553368e"
+             label="AIS:353499000 - Cargo ships / All ships of this type"
+             speed="0.0"
+             symbol="app6a:SPSPXMC-------C"
+             x="4.06087541943046"
+             y="51.94900893557178"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=e5e1b5f7-89d2-48d6-8903-1eccb54bde7e">
+      <point course="216.0" id="e5e1b5f7-89d2-48d6-8903-1eccb54bde7e"
+             label="AIS:232560000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.3013301075297665"
+             y="51.879496798455335"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=f967b9e3-e66d-4c1d-b478-21c27b7c35ac">
+      <point course="287.0" id="f967b9e3-e66d-4c1d-b478-21c27b7c35ac"
+             label="AIS:232002681 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.127995021819772"
+             y="51.945661538322156"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=f2f77ef3-3862-4821-bdcc-bbe774d76be5">
+      <point course="20.0" id="f2f77ef3-3862-4821-bdcc-bbe774d76be5"
+             label="AIS:311423000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.368835948040244"
+             y="51.8880047664648"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=558e9a36-fe73-4264-bc9a-afd1e39ee25d">
+      <point course="193.0" id="558e9a36-fe73-4264-bc9a-afd1e39ee25d"
+             label="AIS:236301000 - Unknown"
+             speed="0.0"
+             symbol="app6a:SPSP----------C"
+             x="4.310932416375424"
+             y="51.88699625575498"/>
+   </a>
+   <a href="http://niris.ncia.nato.int:8080/tracks-monitor/TrackStoreTrack?rawTrackId=da10aeaa-c2ea-4f65-9faf-dbbdff02765a">
+      <point course="277.0" id="da10aeaa-c2ea-4f65-9faf-dbbdff02765a"
+             label="AIS:273441760 - Unknown"
+             speed="13.606911447084233"
+             symbol="app6a:SPSP----------C"
+             x="4.515552789899873"
+             y="52.46708303297556"/>
+   </a>
+</nvg>

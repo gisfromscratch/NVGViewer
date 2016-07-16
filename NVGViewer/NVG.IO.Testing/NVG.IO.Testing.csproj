@@ -55,6 +55,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Data\AIS.nvg" />
+    <None Include="Data\Demo-Link16-recording.nvg" />
+    <None Include="Data\Demo-NFFI-recording.nvg" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
