@@ -17,6 +17,8 @@
 using Esri.ArcGISRuntime.Controls;
 using MahApps.Metro.Controls;
 using NVGViewer.ViewModel;
+using System;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows;
@@ -73,6 +75,14 @@ namespace NVGViewer
             }).ContinueWith((task) => {
                 mainViewModel.EndLoadingFiles();
             }, TaskScheduler.FromCurrentSynchronizationContext());
+        }
+
+        private void FocusMapViewSpatialReferenceChanged(object sender, EventArgs e)
+        {
+            if (null != FocusMapView.SpatialReference)
+            {
+                // Create the message processor
+            }
         }
     }
 }

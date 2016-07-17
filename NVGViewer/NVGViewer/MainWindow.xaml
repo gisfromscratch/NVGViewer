@@ -17,7 +17,8 @@
                       Grid.Row="0"
                       AllowDrop="True"
 					  LayerLoaded="FocusMapViewLayerLoaded"
-                      Drop="FocusMapViewDropped">
+                      Drop="FocusMapViewDropped"
+                      SpatialReferenceChanged="FocusMapViewSpatialReferenceChanged">
 			<esri:Map>
 				<esri:ArcGISTiledMapServiceLayer ID="Basemap"
 					ServiceUri="http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer"/>
