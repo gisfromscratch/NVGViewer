@@ -15,6 +15,8 @@
  */
 
 using GalaSoft.MvvmLight;
+using NVGViewer.Commands;
+using System.Windows.Input;
 
 namespace NVGViewer.ViewModel
 {
@@ -45,6 +47,14 @@ namespace NVGViewer.ViewModel
             ////{
             ////    // Code runs "for real"
             ////}
+
+            // Create the commands
+            LoadNvgFileCommand = new LoadNvgFileCommand(this);
         }
+
+        /// <summary>
+        /// Command for loading NVG files.
+        /// </summary>
+        public ICommand LoadNvgFileCommand { get; private set; }
     }
 }

@@ -82,6 +82,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Commands\LoadNvgFileCommand.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ViewModelLocator.cs" />
     <Page Include="MainWindow.xaml">
@@ -99,6 +100,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NVG.Data\NVG.Data.csproj">
+      <Project>{c928e8ed-e179-45d6-93ee-938690c41309}</Project>
+      <Name>NVG.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NVG.IO\NVG.IO.csproj">
+      <Project>{a3bd70bd-f73a-4f63-a980-1c9fea534d1e}</Project>
+      <Name>NVG.IO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -16,7 +16,10 @@
 
 using Esri.ArcGISRuntime.Controls;
 using MahApps.Metro.Controls;
+using NVGViewer.ViewModel;
 using System.Diagnostics;
+using System.Threading.Tasks;
+using System.Windows;
 
 namespace NVGViewer
 {
@@ -33,6 +36,40 @@ namespace NVGViewer
                 return;
 
             Debug.WriteLine(string.Format("Error while loading layer : {0} - {1}", e.Layer.ID, e.LoadError.Message));
+        }
+
+        private void FocusMapViewDropped(object sender, DragEventArgs e)
+        {
+            if (!e.Data.GetDataPresent(DataFormats.FileDrop))
+            {
+                return;
+            }
+            var filePaths = e.Data.GetData(DataFormats.FileDrop) as string[];
+            if (null == filePaths)
+            {
+                return;
+            }
+
+            e.Handled = true;
+
+            var mainViewModel = DataContext as MainViewModel;
+            if (null == mainViewModel)
+            {
+                return;
+            }
+
+            // Start a new task for loading the NVG files
+            Task.Run(() =>
+            {
+                var loadNvgFileCommand = mainViewModel.LoadNvgFileCommand;
+                foreach (var filePath in filePaths)
+                {
+                    if (loadNvgFileCommand.CanExecute(filePath))
+                    {
+                        loadNvgFileCommand.Execute(filePath);
+                    }
+                }
+            });
         }
     }
 }
