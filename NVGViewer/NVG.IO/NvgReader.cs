@@ -117,7 +117,9 @@ namespace NVG.IO
                     case XmlNodeType.Element:
                         if (0 == string.CompareOrdinal(@"point", _xmlTextReader.Name.ToLowerInvariant()))
                         {
-                            // TODO: Read the next point element
+                            // Read and add the point element
+                            var pointElement = ReadPointElement();
+                            hyperlinkElement.PointElements.Add(pointElement);
                         }
                         break;
 
@@ -144,7 +146,11 @@ namespace NVG.IO
             // Read the point attributes
             while (_xmlTextReader.MoveToNextAttribute())
             {
-                if (0 == string.CompareOrdinal(@"x", _xmlTextReader.Name.ToLowerInvariant()))
+                if (0 == string.CompareOrdinal(@"id", _xmlTextReader.Name.ToLowerInvariant()))
+                {
+                    pointElement.Id = _xmlTextReader.Value;
+                }
+                else if (0 == string.CompareOrdinal(@"x", _xmlTextReader.Name.ToLowerInvariant()))
                 {
                     if (double.TryParse(_xmlTextReader.Value, NumberStyles.Any, CultureInfo.InvariantCulture, out x))
                     {
@@ -158,16 +164,20 @@ namespace NVG.IO
                         pointElement.Y = y;
                     }
                 }
-                else if (0 == string.CompareOrdinal(@"symbolcode", _xmlTextReader.Name.ToLowerInvariant()))
+                else if (0 == string.CompareOrdinal(@"symbol", _xmlTextReader.Name.ToLowerInvariant()))
                 {
                     if (TryParseSymbolCode(_xmlTextReader.Value, out symbolCode))
                     {
                         pointElement.SymbolCode = symbolCode;
                     }
                 }
+                else if (0 == string.CompareOrdinal(@"label", _xmlTextReader.Name.ToLowerInvariant()))
+                {
+                    pointElement.Label = _xmlTextReader.Value;
+                }
             }
 
-            return null;
+            return pointElement;
         }
 
         private static bool TryParseSymbolCode(string value, out string symbolCode)

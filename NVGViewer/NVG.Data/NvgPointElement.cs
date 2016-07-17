@@ -26,6 +26,7 @@ namespace NVG.Data
         /// </summary>
         public NvgPointElement()
         {
+            Id = string.Empty;
             X = double.NaN;
             Y = double.NaN;
             SymbolCode = string.Empty;
@@ -42,13 +43,13 @@ namespace NVG.Data
         public string SymbolCode { get; set; }
 
         /// <summary>
-        /// <c>true</c> when this point element has coordinates and a symbol code.
+        /// <c>true</c> when this point element has an ID, coordinates and a symbol code.
         /// </summary>
         public bool IsEmpty
         {
             get
             {
-                return double.IsNaN(X) && double.IsNaN(Y) && string.IsNullOrEmpty(SymbolCode);
+                return !string.IsNullOrEmpty(Id) && double.IsNaN(X) && double.IsNaN(Y) && string.IsNullOrEmpty(SymbolCode);
             }
         }
     }

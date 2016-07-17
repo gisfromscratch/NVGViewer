@@ -18,6 +18,7 @@ using NVG.Data;
 using NVG.IO;
 using NVGViewer.ViewModel;
 using System;
+using System.ComponentModel;
 using System.IO;
 using System.Windows.Input;
 
@@ -34,6 +35,13 @@ namespace NVGViewer.Commands
         internal LoadNvgFileCommand(MainViewModel viewModel)
         {
             _viewModel = viewModel;
+            _viewModel.PropertyChanged += ViewModelPropertyChanged;
+        }
+
+        private void ViewModelPropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            // E.G. the map view was initialized
+            CanExecuteChanged?.Invoke(this, EventArgs.Empty);
         }
 
         public event EventHandler CanExecuteChanged;
@@ -45,6 +53,11 @@ namespace NVGViewer.Commands
         /// <returns><c>true</c> if the NVG file can be accessed.</returns>
         public bool CanExecute(object filePath)
         {
+            if (null == _viewModel.FocusMapView)
+            {
+                return false;
+            }
+
             var filePathAsString = filePath as string;
             if (null == filePathAsString)
             {
@@ -67,24 +80,14 @@ namespace NVGViewer.Commands
                 return;
             }
 
+            // Read and add the geometries using the reader and view model
             using (var nvgReader = new NvgReader(filePathAsString))
             {
                 NvgElement nvgElement;
                 while (null != (nvgElement = nvgReader.ReadNextElement()))
                 {
-                    foreach(var nvgHyperLinkElement in nvgElement.HyperlinkElements)
-                    {
-                        foreach(var nvgPointElement in nvgHyperLinkElement.PointElements)
-                        {
-                            if (!nvgPointElement.IsEmpty)
-                            {
-                                // TODO: Create a map graphic
-                            }
-                        }
-                    }
+                    _viewModel.MessageViewModel.AddElement(nvgElement);
                 }
-                
-                // TODO: Create map graphics using the NVG geometries!
             }
         }
     }

@@ -17,6 +17,11 @@
 using Esri.ArcGISRuntime.Symbology.Specialized;
 using GalaSoft.MvvmLight;
 using NVG.Data;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Globalization;
+using System.Threading.Tasks;
 
 namespace NVGViewer.ViewModel
 {
@@ -25,10 +30,85 @@ namespace NVGViewer.ViewModel
     /// </summary>
     public class MessageViewModel : ViewModelBase
     {
-        public MessageLayer CreateMessageLayer(NvgElement nvgElement)
+        private readonly MainViewModel _viewModel;
+        private readonly ObservableCollection<NvgElement> _nvgElements;
+
+        /// <summary>
+        /// Creates a new message view model instance using the specifies main view model.
+        /// </summary>
+        /// <param name="viewModel">The main view model.</param>
+        public MessageViewModel(MainViewModel viewModel)
         {
-            // TODO: Create the message layer containing all messages of the NVG element
-            return null;
+            _viewModel = viewModel;
+            _nvgElements = new ObservableCollection<NvgElement>();
+        }
+
+        /// <summary>
+        /// Adds a NVG element to this view model.
+        /// </summary>
+        /// <param name="nvgElement">The NVG element which should be added.</param>
+        public void AddElement(NvgElement nvgElement)
+        {
+            if (null == nvgElement)
+            {
+                throw new ArgumentNullException(nameof(nvgElement));
+            }
+
+            _nvgElements.Add(nvgElement);
+        }
+
+        /// <summary>
+        /// Processes all added NVG elements using the registered map view.
+        /// Make sure this method is called from the UI thread!
+        /// </summary>
+        public async void ProcessAllMessages()
+        {
+            var mapView = _viewModel.FocusMapView;
+            if (null == mapView)
+            {
+                return;
+            }
+
+            // Create a new message layer and wait till the layer was loaded
+            var messageLayer = new MessageLayer();
+            mapView.Map.Layers.Add(messageLayer);
+            await mapView.LayersLoadedAsync(new[] { messageLayer });
+
+            // Process all messages
+            foreach (var nvgElement in _nvgElements)
+            {
+                foreach (var nvgHyperLinkElement in nvgElement.HyperlinkElements)
+                {
+                    foreach (var nvgPointElement in nvgHyperLinkElement.PointElements)
+                    {
+                        if (!nvgPointElement.IsEmpty)
+                        {
+                            var message = CreateMessage(nvgPointElement);
+                            if (!messageLayer.ProcessMessage(message))
+                            {
+                                // TODO: Log the message error!
+                            }
+                        }
+                    }
+                }
+            }
+
+            // Clear the elements
+            _nvgElements.Clear();
+        }
+
+        private static Message CreateMessage(NvgPointElement pointElement)
+        {
+            var messageProperties = new Dictionary<string, string>();
+            messageProperties.Add(@"_type", @"position_report");
+            messageProperties.Add(@"_action", @"update");
+            messageProperties.Add(@"_id", pointElement.Id);
+            messageProperties.Add(@"_control_points", string.Format(CultureInfo.InvariantCulture, @"{0},{1}", pointElement.X, pointElement.Y));
+            messageProperties.Add(@"_wkid", @"4326");
+            messageProperties.Add(@"sic", pointElement.SymbolCode);
+            messageProperties.Add(@"uniquedesignation", pointElement.Label);
+
+            return new Message(messageProperties);
         }
     }
 }

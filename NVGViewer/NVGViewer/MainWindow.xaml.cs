@@ -73,6 +73,9 @@ namespace NVGViewer
                     }
                 }
             }).ContinueWith((task) => {
+                // Process all messages
+                mainViewModel.MessageViewModel.ProcessAllMessages();
+
                 mainViewModel.EndLoadingFiles();
             }, TaskScheduler.FromCurrentSynchronizationContext());
         }
@@ -81,7 +84,14 @@ namespace NVGViewer
         {
             if (null != FocusMapView.SpatialReference)
             {
-                // Create the message processor
+                var mainViewModel = DataContext as MainViewModel;
+                if (null == mainViewModel)
+                {
+                    return;
+                }
+
+                // Update the map view
+                mainViewModel.FocusMapView = FocusMapView;
             }
         }
     }

@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+using Esri.ArcGISRuntime.Controls;
 using GalaSoft.MvvmLight;
 using NVGViewer.Commands;
 using System.Windows.Input;
@@ -37,6 +38,8 @@ namespace NVGViewer.ViewModel
         private string _statusLabel = @"Drag the NVG files on the map view . . .";
         private bool _isBusy;
 
+        private MapView _focusMapView;
+
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
@@ -51,14 +54,31 @@ namespace NVGViewer.ViewModel
             ////    // Code runs "for real"
             ////}
 
+            // Create the view models
+            MessageViewModel = new MessageViewModel(this);
+
             // Create the commands
             LoadNvgFileCommand = new LoadNvgFileCommand(this);
         }
 
         /// <summary>
+        /// The message view model for processing messages.
+        /// </summary>
+        public MessageViewModel MessageViewModel { get; private set; }
+
+        /// <summary>
         /// Command for loading NVG files.
         /// </summary>
         public ICommand LoadNvgFileCommand { get; private set; }
+
+        /// <summary>
+        /// The initialized focus map view of this application.
+        /// </summary>
+        public MapView FocusMapView
+        {
+            get { return _focusMapView; }
+            set { Set(ref _focusMapView, value); }
+        }
 
         /// <summary>
         /// The status label shown in the status bar.
