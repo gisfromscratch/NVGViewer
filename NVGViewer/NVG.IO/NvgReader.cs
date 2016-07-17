@@ -16,6 +16,7 @@
 
 using NVG.Data;
 using System;
+using System.Globalization;
 using System.Xml;
 
 namespace NVG.IO
@@ -64,7 +65,7 @@ namespace NVG.IO
             // Read the NVG attributes
             while (_xmlTextReader.MoveToNextAttribute())
             {
-                if (0 == string.CompareOrdinal(@"version", _xmlTextReader.Name))
+                if (0 == string.CompareOrdinal(@"version", _xmlTextReader.Name.ToLowerInvariant()))
                 {
                     element.Version = _xmlTextReader.Value;
                 }
@@ -103,7 +104,7 @@ namespace NVG.IO
             // Read the hyperlink attributes
             while (_xmlTextReader.MoveToNextAttribute())
             {
-                if (0 == string.CompareOrdinal(@"href", _xmlTextReader.Name))
+                if (0 == string.CompareOrdinal(@"href", _xmlTextReader.Name.ToLowerInvariant()))
                 {
                     hyperlinkElement.Url = _xmlTextReader.Value;
                 }
@@ -132,6 +133,63 @@ namespace NVG.IO
                 }
             }
             return null;
+        }
+
+        private NvgPointElement ReadPointElement()
+        {
+            NvgPointElement pointElement = new NvgPointElement();
+            double x, y;
+            string symbolCode;
+
+            // Read the point attributes
+            while (_xmlTextReader.MoveToNextAttribute())
+            {
+                if (0 == string.CompareOrdinal(@"x", _xmlTextReader.Name.ToLowerInvariant()))
+                {
+                    if (double.TryParse(_xmlTextReader.Value, NumberStyles.Any, CultureInfo.InvariantCulture, out x))
+                    {
+                        pointElement.X = x;
+                    }
+                }
+                else if (0 == string.CompareOrdinal(@"y", _xmlTextReader.Name.ToLowerInvariant()))
+                {
+                    if (double.TryParse(_xmlTextReader.Value, NumberStyles.Any, CultureInfo.InvariantCulture, out y))
+                    {
+                        pointElement.Y = y;
+                    }
+                }
+                else if (0 == string.CompareOrdinal(@"symbolcode", _xmlTextReader.Name.ToLowerInvariant()))
+                {
+                    if (TryParseSymbolCode(_xmlTextReader.Value, out symbolCode))
+                    {
+                        pointElement.SymbolCode = symbolCode;
+                    }
+                }
+            }
+
+            return null;
+        }
+
+        private static bool TryParseSymbolCode(string value, out string symbolCode)
+        {
+            symbolCode = string.Empty;
+            if (string.IsNullOrEmpty(value))
+            {
+                return false;
+            }
+
+            // Validate if there is any prefix
+            // E.G.: app6a:SPSP----------C
+            var splittedValue = value.Split(':');
+            if (2 == splittedValue.Length)
+            {
+                symbolCode = splittedValue[1];
+                return true;
+            }
+
+            // Use the raw value without validation
+            symbolCode = value;
+            return true;
         }
 
         /// <summary>

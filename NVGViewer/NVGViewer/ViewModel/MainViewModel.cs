@@ -34,6 +34,9 @@ namespace NVGViewer.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
+        private string _statusLabel = @"Drag the NVG files on the map view . . .";
+        private bool _isBusy;
+
         /// <summary>
         /// Initializes a new instance of the MainViewModel class.
         /// </summary>
@@ -56,5 +59,41 @@ namespace NVGViewer.ViewModel
         /// Command for loading NVG files.
         /// </summary>
         public ICommand LoadNvgFileCommand { get; private set; }
+
+        /// <summary>
+        /// The status label shown in the status bar.
+        /// </summary>
+        public string StatusLabel
+        {
+            get { return _statusLabel; }
+            set { Set(ref _statusLabel, value); }
+        }
+
+        /// <summary>
+        /// <c>true</c> if the application is busy.
+        /// </summary>
+        public bool IsBusy
+        {
+            get { return _isBusy; }
+            set { Set(ref _isBusy, value); }
+        }
+
+        /// <summary>
+        /// Updates the status label and start the progress bar animation.
+        /// </summary>
+        public void BeginLoadingFiles()
+        {
+            StatusLabel = @"Loading files . . .";
+            IsBusy = true;
+        }
+
+        /// <summary>
+        /// Resets the status label and stops the progress bar animation.
+        /// </summary>
+        public void EndLoadingFiles()
+        {
+            StatusLabel = @"Drag the NVG files on the map view . . .";
+            IsBusy = false;
+        }
     }
 }

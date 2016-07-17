@@ -72,7 +72,16 @@ namespace NVGViewer.Commands
                 NvgElement nvgElement;
                 while (null != (nvgElement = nvgReader.ReadNextElement()))
                 {
-
+                    foreach(var nvgHyperLinkElement in nvgElement.HyperlinkElements)
+                    {
+                        foreach(var nvgPointElement in nvgHyperLinkElement.PointElements)
+                        {
+                            if (!nvgPointElement.IsEmpty)
+                            {
+                                // TODO: Create a map graphic
+                            }
+                        }
+                    }
                 }
                 
                 // TODO: Create map graphics using the NVG geometries!

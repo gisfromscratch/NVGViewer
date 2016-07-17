@@ -59,6 +59,7 @@ namespace NVGViewer
             }
 
             // Start a new task for loading the NVG files
+            mainViewModel.BeginLoadingFiles();
             Task.Run(() =>
             {
                 var loadNvgFileCommand = mainViewModel.LoadNvgFileCommand;
@@ -69,7 +70,9 @@ namespace NVGViewer
                         loadNvgFileCommand.Execute(filePath);
                     }
                 }
-            });
+            }).ContinueWith((task) => {
+                mainViewModel.EndLoadingFiles();
+            }, TaskScheduler.FromCurrentSynchronizationContext());
         }
     }
 }
