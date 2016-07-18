@@ -34,6 +34,7 @@ namespace NVG.IO.Testing
             Assert.IsNotNull(element, @"The NVG element must not be null!");
 
             Assert.AreEqual(@"0.3", element.Version, @"The NVG element version is not equal to 0.3!");
+            Assert.AreEqual(183, element.Children.Count, @"The NVG child element count does not match!");
         }
     }
 }

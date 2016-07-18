@@ -42,10 +42,10 @@ namespace NVG.IO
         /// <returns>The next NVG element or <code>null</code> when there are no more NVG elements.</returns>
         public INvgElement ReadNextElement()
         {
-            return ReadNvgElement(null, null);
+            return ReadNvgElement(null);
         }
 
-        private INvgElement ReadNvgElement(INvgElement parentElement, NvgElementTag elementTag)
+        private INvgElement ReadNvgElement(INvgElement parentElement)
         {
             INvgElement element = null;
             NvgElementTag startTag = null;
@@ -65,7 +65,10 @@ namespace NVG.IO
                             {
                                 parentElement.Children.Add(element);
                             }
-                            ReadNvgElement(element, startTag);
+                            if (null == ReadNvgElement(element))
+                            {
+                                return element;
+                            }
                         }
                         else if (startTag.IsGroupTag)
                         {
@@ -76,7 +79,10 @@ namespace NVG.IO
                             {
                                 parentElement.Children.Add(element);
                             }
-                            ReadNvgElement(element, startTag);
+                            if (null == ReadNvgElement(element))
+                            {
+                                return element;
+                            }
                         }
                         else if (startTag.IsPointTag)
                         {
@@ -87,21 +93,16 @@ namespace NVG.IO
                             {
                                 parentElement.Children.Add(element);
                             }
-                            ReadNvgElement(element, startTag);
+                            if (null == ReadNvgElement(element))
+                            {
+                                return element;
+                            }
                         }
                         break;
 
                     case XmlNodeType.EndElement:
                         endTag = new NvgElementTag(_xmlTextReader.LocalName);
-                        if (endTag.IsNvgTag)
-                        {
-                            return element;
-                        }
-                        else if (endTag.IsEqualTo(elementTag))
-                        {
-                            return element;
-                        }
-                        break;
+                        return element;
                 }
             }
             return element;
