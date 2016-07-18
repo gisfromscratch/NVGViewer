@@ -15,27 +15,24 @@
  */
 
 using System.Collections.Generic;
+using System.Xml;
 
 namespace NVG.Data
 {
     /// <summary>
-    /// Represents a NVG hyperlink element.
+    /// Represents a NVG XML element.
     /// </summary>
-    public class NvgHyperlinkElement
+    public interface INvgElement
     {
-        public NvgHyperlinkElement()
-        {
-            PointElements = new List<NvgPointElement>();
-        }
+        /// <summary>
+        /// The child NVG elements of this instance.
+        /// </summary>
+        ICollection<INvgElement> Children { get; }
 
         /// <summary>
-        /// The link this element refers to.
+        /// Constructs this NVG element by using the specified reader.
         /// </summary>
-        public string Url { get; set; }
-
-        /// <summary>
-        /// The point elements of this hyperlink element.
-        /// </summary>
-        public ICollection<NvgPointElement> PointElements { get; private set; }
+        /// <param name="reader">The XML reader which reads the underyling NVG file.</param>
+        void ConstructFromReader(XmlTextReader reader);
     }
 }

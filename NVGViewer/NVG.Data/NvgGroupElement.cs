@@ -14,58 +14,38 @@
  * limitations under the License.
  */
 
+using System;
 using System.Collections.Generic;
 using System.Xml;
 
 namespace NVG.Data
 {
     /// <summary>
-    /// Represents a NVG point element.
+    /// Represents a NVG group element.
     /// </summary>
-    public class NvgPointElement : INvgElement
+    public class NvgGroupElement : INvgElement
     {
         /// <summary>
-        /// Creates a new instance and sets the coordinates and the symbol code to the default values.
+        /// Create a new group element instance.
         /// </summary>
-        public NvgPointElement()
+        public NvgGroupElement()
         {
-            Id = string.Empty;
-            X = double.NaN;
-            Y = double.NaN;
-            SymbolCode = string.Empty;
-
             Children = new List<INvgElement>();
         }
 
-        public string Id { get; set; }
-
-        public string Label { get; set; }
-
-        public double X { get; set; }
-
-        public double Y { get; set; }
-
-        public string SymbolCode { get; set; }
+        /// <summary>
+        /// The link this element refers to.
+        /// </summary>
+        public string Url { get; set; }
 
         /// <summary>
         /// The child elements of this NVG element.
         /// </summary>
         public ICollection<INvgElement> Children { get; private set; }
 
-        /// <summary>
-        /// <c>true</c> when this point element has an ID, coordinates and a symbol code.
-        /// </summary>
-        public bool IsEmpty
-        {
-            get
-            {
-                return !string.IsNullOrEmpty(Id) && double.IsNaN(X) && double.IsNaN(Y) && string.IsNullOrEmpty(SymbolCode);
-            }
-        }
-
         public void ConstructFromReader(XmlTextReader reader)
         {
-            
+            throw new NotImplementedException();
         }
     }
 }

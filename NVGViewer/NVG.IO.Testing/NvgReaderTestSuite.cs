@@ -15,6 +15,7 @@
  */
 
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NVG.Data;
 using System.IO;
 
 namespace NVG.IO.Testing
@@ -29,7 +30,7 @@ namespace NVG.IO.Testing
             Assert.IsTrue(File.Exists(aisFile), @"The NVG file does not exists!");
 
             var reader = new NvgReader(aisFile);
-            var element = reader.ReadNextElement();
+            var element = reader.ReadNextElement() as NvgElement;
             Assert.IsNotNull(element, @"The NVG element must not be null!");
 
             Assert.AreEqual(@"0.3", element.Version, @"The NVG element version is not equal to 0.3!");

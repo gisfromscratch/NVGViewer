@@ -14,21 +14,23 @@
  * limitations under the License.
  */
 
+using System;
 using System.Collections.Generic;
+using System.Xml;
 
 namespace NVG.Data
 {
     /// <summary>
-    /// Represents a NVG element.
+    /// Represents a NVG root element.
     /// </summary>
-    public class NvgElement
+    public class NvgElement : INvgElement
     {
         /// <summary>
         /// Creates a new NVG element instance.
         /// </summary>
         public NvgElement()
         {
-            HyperlinkElements = new List<NvgHyperlinkElement>();
+            Children = new List<INvgElement>();
         }
 
         /// <summary>
@@ -37,8 +39,20 @@ namespace NVG.Data
         public string Version { get; set; }
 
         /// <summary>
-        /// The hyperlink elements of this NVG element.
+        /// The child elements of this NVG element.
         /// </summary>
-        public ICollection<NvgHyperlinkElement> HyperlinkElements { get; private set; }
+        public ICollection<INvgElement> Children { get; private set; }
+
+        public void ConstructFromReader(XmlTextReader reader)
+        {
+            // Read the NVG attributes
+            while (reader.MoveToNextAttribute())
+            {
+                if (0 == string.CompareOrdinal(@"version", reader.LocalName.ToLowerInvariant()))
+                {
+                    Version = reader.Value;
+                }
+            }
+        }
     }
 }

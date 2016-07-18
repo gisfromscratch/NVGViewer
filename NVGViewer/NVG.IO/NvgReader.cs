@@ -41,101 +41,94 @@ namespace NVG.IO
         /// Reads the next NVG element from the stream.
         /// </summary>
         /// <returns>The next NVG element or <code>null</code> when there are no more NVG elements.</returns>
-        public NvgElement ReadNextElement()
+        public INvgElement ReadNextElement()
         {
-            while(_xmlTextReader.Read())
-            {
-                switch (_xmlTextReader.NodeType)
-                {
-                    case XmlNodeType.Element:
-                        if (0 == string.CompareOrdinal(@"nvg", _xmlTextReader.Name.ToLowerInvariant()))
-                        {
-                            return ReadNvgElement();
-                        }
-                        break;
-                }
-            }
-            return null;
+            return ReadNvgElement(null, null);
         }
 
-        private NvgElement ReadNvgElement()
+        private INvgElement ReadNvgElement(INvgElement parentElement, NvgElementTag elementTag)
         {
-            NvgElement element = new NvgElement();
-
-            // Read the NVG attributes
-            while (_xmlTextReader.MoveToNextAttribute())
-            {
-                if (0 == string.CompareOrdinal(@"version", _xmlTextReader.Name.ToLowerInvariant()))
-                {
-                    element.Version = _xmlTextReader.Value;
-                }
-            }
-
+            INvgElement element = null;
+            NvgElementTag startTag = null;
+            NvgElementTag endTag = null;
             while (_xmlTextReader.Read())
             {
                 switch (_xmlTextReader.NodeType)
                 {
                     case XmlNodeType.Element:
-                        if (0 == string.CompareOrdinal(@"a", _xmlTextReader.Name.ToLowerInvariant()))
+                        startTag = new NvgElementTag(_xmlTextReader.LocalName);
+                        if (startTag.IsNvgTag)
                         {
-                            var hyperlinkElement = ReadHyperlinkElement();
-                            element.HyperlinkElements.Add(hyperlinkElement);
+                            // Read the NVG element
+                            element = new NvgElement();
+                            element.ConstructFromReader(_xmlTextReader);
+                            if (null != parentElement)
+                            {
+                                parentElement.Children.Add(element);
+                            }
+                            ReadNvgElement(element, startTag);
+                        }
+                        else if (startTag.IsGroupTag)
+                        {
+                            // Read the NVG group element
                         }
                         break;
 
                     case XmlNodeType.EndElement:
-                        if (0 == string.CompareOrdinal(@"nvg", _xmlTextReader.Name.ToLowerInvariant()))
-                        { 
+                        endTag = new NvgElementTag(_xmlTextReader.LocalName);
+                        if (endTag.IsNvgTag)
+                        {
+                            return element;
+                        }
+                        else if (endTag.IsEqualTo(elementTag))
+                        {
                             return element;
                         }
                         break;
-
-                    case XmlNodeType.Attribute:
-                        break;
                 }
             }
-            return null;
+            return element;
         }
 
-        private NvgHyperlinkElement ReadHyperlinkElement()
-        {
-            NvgHyperlinkElement hyperlinkElement = new NvgHyperlinkElement();
+        //private NvgGroupElement ReadGroupElement()
+        //{
+        //    var groupElement = new NvgGroupElement();
 
-            // Read the hyperlink attributes
-            while (_xmlTextReader.MoveToNextAttribute())
-            {
-                if (0 == string.CompareOrdinal(@"href", _xmlTextReader.Name.ToLowerInvariant()))
-                {
-                    hyperlinkElement.Url = _xmlTextReader.Value;
-                }
-            }
+        //    // Read the hyperlink attributes
+        //    while (_xmlTextReader.MoveToNextAttribute())
+        //    {
+        //        if (0 == string.CompareOrdinal(@"href", _xmlTextReader.Name.ToLowerInvariant()))
+        //        {
+        //            groupElement.Url = _xmlTextReader.Value;
+        //        }
+        //    }
 
-            while (_xmlTextReader.Read())
-            {
-                switch (_xmlTextReader.NodeType)
-                {
-                    case XmlNodeType.Element:
-                        if (0 == string.CompareOrdinal(@"point", _xmlTextReader.Name.ToLowerInvariant()))
-                        {
-                            // Read and add the point element
-                            var pointElement = ReadPointElement();
-                            hyperlinkElement.PointElements.Add(pointElement);
-                        }
-                        break;
+        //    while (_xmlTextReader.Read())
+        //    {
+        //        switch (_xmlTextReader.NodeType)
+        //        {
+        //            case XmlNodeType.Element:
+        //                if (0 == string.CompareOrdinal(@"point", _xmlTextReader.Name.ToLowerInvariant()))
+        //                {
+        //                    // Read and add the point element
+        //                    var pointElement = ReadPointElement();
+        //                    groupElement.PointElements.Add(pointElement);
+        //                }
+        //                break;
 
-                    case XmlNodeType.EndElement:
-                        if (0 == string.CompareOrdinal(@"a", _xmlTextReader.Name.ToLowerInvariant()))
-                        {
-                            return hyperlinkElement;
-                        }
-                        break;
+        //            case XmlNodeType.EndElement:
+        //                if (0 == string.CompareOrdinal(@"a", _xmlTextReader.Name.ToLowerInvariant()))
+        //                {
+        //                    return groupElement;
+        //                }
+        //                break;
 
-                    case XmlNodeType.Attribute:
-                        break;
-                }
-            }
-            return null;
-        }
+        //            case XmlNodeType.Attribute:
+        //                break;
+        //        }
+        //    }
+        //    return null;
+        //}
 
         private NvgPointElement ReadPointElement()
         {

@@ -40,8 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="INvgElement.cs" />
     <Compile Include="NvgElement.cs" />
-    <Compile Include="NvgHyperlinkElement.cs" />
+    <Compile Include="NvgGroupElement.cs" />
     <Compile Include="NvgPointElement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

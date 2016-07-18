@@ -83,7 +83,7 @@ namespace NVGViewer.Commands
             // Read and add the geometries using the reader and view model
             using (var nvgReader = new NvgReader(filePathAsString))
             {
-                NvgElement nvgElement;
+                INvgElement nvgElement;
                 while (null != (nvgElement = nvgReader.ReadNextElement()))
                 {
                     _viewModel.MessageViewModel.AddElement(nvgElement);

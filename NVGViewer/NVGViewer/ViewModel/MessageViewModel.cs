@@ -31,7 +31,7 @@ namespace NVGViewer.ViewModel
     public class MessageViewModel : ViewModelBase
     {
         private readonly MainViewModel _viewModel;
-        private readonly ObservableCollection<NvgElement> _nvgElements;
+        private readonly ObservableCollection<INvgElement> _nvgElements;
 
         /// <summary>
         /// Creates a new message view model instance using the specifies main view model.
@@ -40,14 +40,14 @@ namespace NVGViewer.ViewModel
         public MessageViewModel(MainViewModel viewModel)
         {
             _viewModel = viewModel;
-            _nvgElements = new ObservableCollection<NvgElement>();
+            _nvgElements = new ObservableCollection<INvgElement>();
         }
 
         /// <summary>
         /// Adds a NVG element to this view model.
         /// </summary>
         /// <param name="nvgElement">The NVG element which should be added.</param>
-        public void AddElement(NvgElement nvgElement)
+        public void AddElement(INvgElement nvgElement)
         {
             if (null == nvgElement)
             {
@@ -77,24 +77,30 @@ namespace NVGViewer.ViewModel
             // Process all messages
             foreach (var nvgElement in _nvgElements)
             {
-                foreach (var nvgHyperLinkElement in nvgElement.HyperlinkElements)
-                {
-                    foreach (var nvgPointElement in nvgHyperLinkElement.PointElements)
-                    {
-                        if (!nvgPointElement.IsEmpty)
-                        {
-                            var message = CreateMessage(nvgPointElement);
-                            if (!messageLayer.ProcessMessage(message))
-                            {
-                                // TODO: Log the message error!
-                            }
-                        }
-                    }
-                }
+                ProcessAllMessages(nvgElement, messageLayer);
             }
 
             // Clear the elements
             _nvgElements.Clear();
+        }
+
+        private void ProcessAllMessages(INvgElement nvgElement, MessageLayer messageLayer)
+        {
+            foreach (var nvgChildElement in nvgElement.Children)
+            {
+                var nvgPointElement = nvgChildElement as NvgPointElement;
+                if (null != nvgPointElement)
+                {
+                    if (!nvgPointElement.IsEmpty)
+                    {
+                        var message = CreateMessage(nvgPointElement);
+                        if (!messageLayer.ProcessMessage(message))
+                        {
+                            // TODO: Log the message error!
+                        }
+                    }
+                }
+            }
         }
 
         private static Message CreateMessage(NvgPointElement pointElement)
