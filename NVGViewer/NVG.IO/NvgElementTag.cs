@@ -56,6 +56,17 @@ namespace NVG.IO
         }
 
         /// <summary>
+        /// <c>True</c> when this element tag is a point tag.
+        /// </summary>
+        internal bool IsPointTag
+        {
+            get
+            {
+                return 0 == string.CompareOrdinal(@"point", _localName.ToLowerInvariant());
+            }
+        }
+
+        /// <summary>
         /// Determines whether or not this tag name is equal to another tag name.
         /// </summary>
         /// <param name="other">The other tag.</param>

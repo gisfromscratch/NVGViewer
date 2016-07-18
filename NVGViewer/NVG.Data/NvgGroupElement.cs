@@ -14,7 +14,6 @@
  * limitations under the License.
  */
 
-using System;
 using System.Collections.Generic;
 using System.Xml;
 
@@ -45,7 +44,14 @@ namespace NVG.Data
 
         public void ConstructFromReader(XmlTextReader reader)
         {
-            throw new NotImplementedException();
+            // Read the group attributes
+            while (reader.MoveToNextAttribute())
+            {
+                if (0 == string.CompareOrdinal(@"href", reader.Name.ToLowerInvariant()))
+                {
+                    Url = reader.Value;
+                }
+            }
         }
     }
 }

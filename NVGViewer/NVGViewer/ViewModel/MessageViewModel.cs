@@ -86,21 +86,30 @@ namespace NVGViewer.ViewModel
 
         private void ProcessAllMessages(INvgElement nvgElement, MessageLayer messageLayer)
         {
+            var nvgPointElement = nvgElement as NvgPointElement;
+            TryProcessMessage(nvgPointElement, messageLayer);
             foreach (var nvgChildElement in nvgElement.Children)
             {
-                var nvgPointElement = nvgChildElement as NvgPointElement;
-                if (null != nvgPointElement)
+                nvgPointElement = nvgChildElement as NvgPointElement;
+                TryProcessMessage(nvgPointElement, messageLayer);
+            }
+        }
+
+        private static bool TryProcessMessage(NvgPointElement nvgPointElement, MessageLayer messageLayer)
+        {
+            if (null != nvgPointElement)
+            {
+                if (!nvgPointElement.IsEmpty)
                 {
-                    if (!nvgPointElement.IsEmpty)
+                    var message = CreateMessage(nvgPointElement);
+                    if (messageLayer.ProcessMessage(message))
                     {
-                        var message = CreateMessage(nvgPointElement);
-                        if (!messageLayer.ProcessMessage(message))
-                        {
-                            // TODO: Log the message error!
-                        }
+                        return true;
                     }
                 }
             }
+
+            return false;
         }
 
         private static Message CreateMessage(NvgPointElement pointElement)

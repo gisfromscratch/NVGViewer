@@ -16,7 +16,6 @@
 
 using NVG.Data;
 using System;
-using System.Globalization;
 using System.Xml;
 
 namespace NVG.IO
@@ -71,6 +70,24 @@ namespace NVG.IO
                         else if (startTag.IsGroupTag)
                         {
                             // Read the NVG group element
+                            element = new NvgGroupElement();
+                            element.ConstructFromReader(_xmlTextReader);
+                            if (null != parentElement)
+                            {
+                                parentElement.Children.Add(element);
+                            }
+                            ReadNvgElement(element, startTag);
+                        }
+                        else if (startTag.IsPointTag)
+                        {
+                            // Read the NVG point element
+                            element = new NvgPointElement();
+                            element.ConstructFromReader(_xmlTextReader);
+                            if (null != parentElement)
+                            {
+                                parentElement.Children.Add(element);
+                            }
+                            ReadNvgElement(element, startTag);
                         }
                         break;
 
@@ -88,111 +105,6 @@ namespace NVG.IO
                 }
             }
             return element;
-        }
-
-        //private NvgGroupElement ReadGroupElement()
-        //{
-        //    var groupElement = new NvgGroupElement();
-
-        //    // Read the hyperlink attributes
-        //    while (_xmlTextReader.MoveToNextAttribute())
-        //    {
-        //        if (0 == string.CompareOrdinal(@"href", _xmlTextReader.Name.ToLowerInvariant()))
-        //        {
-        //            groupElement.Url = _xmlTextReader.Value;
-        //        }
-        //    }
-
-        //    while (_xmlTextReader.Read())
-        //    {
-        //        switch (_xmlTextReader.NodeType)
-        //        {
-        //            case XmlNodeType.Element:
-        //                if (0 == string.CompareOrdinal(@"point", _xmlTextReader.Name.ToLowerInvariant()))
-        //                {
-        //                    // Read and add the point element
-        //                    var pointElement = ReadPointElement();
-        //                    groupElement.PointElements.Add(pointElement);
-        //                }
-        //                break;
-
-        //            case XmlNodeType.EndElement:
-        //                if (0 == string.CompareOrdinal(@"a", _xmlTextReader.Name.ToLowerInvariant()))
-        //                {
-        //                    return groupElement;
-        //                }
-        //                break;
-
-        //            case XmlNodeType.Attribute:
-        //                break;
-        //        }
-        //    }
-        //    return null;
-        //}
-
-        private NvgPointElement ReadPointElement()
-        {
-            NvgPointElement pointElement = new NvgPointElement();
-            double x, y;
-            string symbolCode;
-
-            // Read the point attributes
-            while (_xmlTextReader.MoveToNextAttribute())
-            {
-                if (0 == string.CompareOrdinal(@"id", _xmlTextReader.Name.ToLowerInvariant()))
-                {
-                    pointElement.Id = _xmlTextReader.Value;
-                }
-                else if (0 == string.CompareOrdinal(@"x", _xmlTextReader.Name.ToLowerInvariant()))
-                {
-                    if (double.TryParse(_xmlTextReader.Value, NumberStyles.Any, CultureInfo.InvariantCulture, out x))
-                    {
-                        pointElement.X = x;
-                    }
-                }
-                else if (0 == string.CompareOrdinal(@"y", _xmlTextReader.Name.ToLowerInvariant()))
-                {
-                    if (double.TryParse(_xmlTextReader.Value, NumberStyles.Any, CultureInfo.InvariantCulture, out y))
-                    {
-                        pointElement.Y = y;
-                    }
-                }
-                else if (0 == string.CompareOrdinal(@"symbol", _xmlTextReader.Name.ToLowerInvariant()))
-                {
-                    if (TryParseSymbolCode(_xmlTextReader.Value, out symbolCode))
-                    {
-                        pointElement.SymbolCode = symbolCode;
-                    }
-                }
-                else if (0 == string.CompareOrdinal(@"label", _xmlTextReader.Name.ToLowerInvariant()))
-                {
-                    pointElement.Label = _xmlTextReader.Value;
-                }
-            }
-
-            return pointElement;
-        }
-
-        private static bool TryParseSymbolCode(string value, out string symbolCode)
-        {
-            symbolCode = string.Empty;
-            if (string.IsNullOrEmpty(value))
-            {
-                return false;
-            }
-
-            // Validate if there is any prefix
-            // E.G.: app6a:SPSP----------C
-            var splittedValue = value.Split(':');
-            if (2 == splittedValue.Length)
-            {
-                symbolCode = splittedValue[1];
-                return true;
-            }
-
-            // Use the raw value without validation
-            symbolCode = value;
-            return true;
         }
 
         /// <summary>

@@ -15,6 +15,7 @@
  */
 
 using System.Collections.Generic;
+using System.Globalization;
 using System.Xml;
 
 namespace NVG.Data
@@ -65,7 +66,63 @@ namespace NVG.Data
 
         public void ConstructFromReader(XmlTextReader reader)
         {
-            
+            // Read the point attributes
+            double x, y;
+            string symbolCode;
+            while (reader.MoveToNextAttribute())
+            {
+                if (0 == string.CompareOrdinal(@"id", reader.LocalName.ToLowerInvariant()))
+                {
+                    Id = reader.Value;
+                }
+                else if (0 == string.CompareOrdinal(@"x", reader.LocalName.ToLowerInvariant()))
+                {
+                    if (double.TryParse(reader.Value, NumberStyles.Any, CultureInfo.InvariantCulture, out x))
+                    {
+                        X = x;
+                    }
+                }
+                else if (0 == string.CompareOrdinal(@"y", reader.LocalName.ToLowerInvariant()))
+                {
+                    if (double.TryParse(reader.Value, NumberStyles.Any, CultureInfo.InvariantCulture, out y))
+                    {
+                        Y = y;
+                    }
+                }
+                else if (0 == string.CompareOrdinal(@"symbol", reader.LocalName.ToLowerInvariant()))
+                {
+                    if (TryParseSymbolCode(reader.Value, out symbolCode))
+                    {
+                        SymbolCode = symbolCode;
+                    }
+                }
+                else if (0 == string.CompareOrdinal(@"label", reader.LocalName.ToLowerInvariant()))
+                {
+                    Label = reader.Value;
+                }
+            }
+        }
+
+        private static bool TryParseSymbolCode(string value, out string symbolCode)
+        {
+            symbolCode = string.Empty;
+            if (string.IsNullOrEmpty(value))
+            {
+                return false;
+            }
+
+            // Validate if there is any prefix
+            // E.G.: app6a:SPSP----------C
+            var splittedValue = value.Split(':');
+            if (2 == splittedValue.Length)
+            {
+                symbolCode = splittedValue[1];
+                return true;
+            }
+
+            // Use the raw value without validation
+            symbolCode = value;
+            return true;
         }
     }
 }
