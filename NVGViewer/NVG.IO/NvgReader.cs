@@ -16,6 +16,7 @@
 
 using NVG.Data;
 using System;
+using System.Collections.Generic;
 using System.Xml;
 
 namespace NVG.IO
@@ -42,70 +43,98 @@ namespace NVG.IO
         /// <returns>The next NVG element or <code>null</code> when there are no more NVG elements.</returns>
         public INvgElement ReadNextElement()
         {
-            return ReadNvgElement(null);
+            return ReadNvgElement();
         }
 
-        private INvgElement ReadNvgElement(INvgElement parentElement)
+        private INvgElement ReadNvgElement()
         {
+            NvgElementPosition elementPosition = null;
             INvgElement element = null;
-            NvgElementTag startTag = null;
-            NvgElementTag endTag = null;
             while (_xmlTextReader.Read())
             {
                 switch (_xmlTextReader.NodeType)
                 {
                     case XmlNodeType.Element:
-                        startTag = new NvgElementTag(_xmlTextReader.LocalName);
+                        var startTag = new NvgElementTag(_xmlTextReader.LocalName);
                         if (startTag.IsNvgTag)
                         {
                             // Read the NVG element
                             element = new NvgElement();
                             element.ConstructFromReader(_xmlTextReader);
-                            if (null != parentElement)
-                            {
-                                parentElement.Children.Add(element);
-                            }
-                            if (null == ReadNvgElement(element))
-                            {
-                                return element;
-                            }
+                            elementPosition = CreateElementPosition(element, startTag, elementPosition);
                         }
                         else if (startTag.IsGroupTag)
                         {
                             // Read the NVG group element
                             element = new NvgGroupElement();
                             element.ConstructFromReader(_xmlTextReader);
-                            if (null != parentElement)
-                            {
-                                parentElement.Children.Add(element);
-                            }
-                            if (null == ReadNvgElement(element))
-                            {
-                                return element;
-                            }
+                            elementPosition = CreateElementPosition(element, startTag, elementPosition);
                         }
                         else if (startTag.IsPointTag)
                         {
                             // Read the NVG point element
                             element = new NvgPointElement();
                             element.ConstructFromReader(_xmlTextReader);
-                            if (null != parentElement)
-                            {
-                                parentElement.Children.Add(element);
-                            }
-                            if (null == ReadNvgElement(element))
-                            {
-                                return element;
-                            }
+                            elementPosition = CreateElementPosition(element, startTag, elementPosition);
                         }
                         break;
 
                     case XmlNodeType.EndElement:
-                        endTag = new NvgElementTag(_xmlTextReader.LocalName);
-                        return element;
+                        var endTag = new NvgElementTag(_xmlTextReader.LocalName);
+                        elementPosition = AddChildren(elementPosition, endTag);
+                        if (null != elementPosition)
+                        {
+                            element = elementPosition.Element;
+                        }
+                        break;
                 }
             }
             return element;
+        }
+
+        /// <summary>
+        /// Creates a new element position.
+        /// </summary>
+        /// <param name="element">The current element.</param>
+        /// <param name="elementTag">The element tag of the specified element.</param>
+        /// <param name="elementPosition">The previous element position.</param>
+        /// <returns>A new element position.</returns>
+        private static NvgElementPosition CreateElementPosition(INvgElement element, NvgElementTag elementTag, NvgElementPosition elementPosition)
+        {
+            return new NvgElementPosition
+            {
+                Element = element,
+                ElementTag = elementTag,
+                PreviousElementPosition = elementPosition
+            };
+        }
+
+        /// <summary>
+        /// Adds all children by iterating backwards using the specified element position.
+        /// The first element matching the specified element tag is treated as the parent element.
+        /// </summary>
+        /// <param name="elementPosition">The current element position refering to the last created child element.</param>
+        /// <param name="elementTag">The element tag of the parent element.</param>
+        /// <returns>The element position of the parent element.</returns>
+        private static NvgElementPosition AddChildren(NvgElementPosition elementPosition, NvgElementTag elementTag)
+        {
+            var childElements = new List<INvgElement>();
+            for (; null != elementPosition && !elementPosition.ElementTag.IsEqualTo(elementTag); elementPosition = elementPosition.PreviousElementPosition)
+            {
+                childElements.Add(elementPosition.Element);
+            }
+            if (null == elementPosition)
+            {
+                // No start tag found!
+                return null;
+            }
+
+            // Add all child elements
+            foreach (var childElement in childElements)
+            {
+                elementPosition.Element.Children.Add(childElement);
+            }
+            return elementPosition;
         }
 
         /// <summary>
