@@ -90,8 +90,7 @@ namespace NVGViewer.ViewModel
             TryProcessMessage(nvgPointElement, messageLayer);
             foreach (var nvgChildElement in nvgElement.Children)
             {
-                nvgPointElement = nvgChildElement as NvgPointElement;
-                TryProcessMessage(nvgPointElement, messageLayer);
+                ProcessAllMessages(nvgChildElement, messageLayer);
             }
         }
 

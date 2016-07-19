@@ -16,11 +16,6 @@
 
 using Esri.ArcGISRuntime;
 using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace NVGViewer
@@ -33,7 +28,7 @@ namespace NVGViewer
             {
                 // Deployed applications must be licensed at the Basic level or greater (https://developers.arcgis.com/licensing).
                 // To enable Basic level functionality set the Client ID property before initializing the ArcGIS Runtime.
-                // ArcGISRuntimeEnvironment.ClientId = "<Your Client ID>";
+                ArcGISRuntimeEnvironment.ClientId = @"ofKYPbHN6Juk4CN4";
 
                 // Initialize the ArcGIS Runtime before any components are created.
                 ArcGISRuntimeEnvironment.Initialize();
