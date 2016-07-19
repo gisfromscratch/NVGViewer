@@ -43,11 +43,6 @@ namespace NVG.IO
         /// <returns>The next NVG element or <code>null</code> when there are no more NVG elements.</returns>
         public INvgElement ReadNextElement()
         {
-            return ReadNvgElement();
-        }
-
-        private INvgElement ReadNvgElement()
-        {
             NvgElementPosition elementPosition = null;
             INvgElement element = null;
             while (_xmlTextReader.Read())
@@ -81,15 +76,22 @@ namespace NVG.IO
 
                     case XmlNodeType.EndElement:
                         var endTag = new NvgElementTag(_xmlTextReader.LocalName);
+
+                        // Add children and reset the position to the matching start tag
                         elementPosition = AddChildren(elementPosition, endTag);
                         if (null != elementPosition)
                         {
+                            // Reset the current element to the start tag
                             element = elementPosition.Element;
+                        }
+                        if (endTag.IsNvgTag)
+                        {
+                            return element;
                         }
                         break;
                 }
             }
-            return element;
+            return null;
         }
 
         /// <summary>
