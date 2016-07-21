@@ -35,7 +35,7 @@ namespace NVGViewer.ViewModel
     /// </summary>
     public class MainViewModel : ViewModelBase
     {
-        private string _statusLabel = @"Drag the NVG files on the map view . . .";
+        private string _statusLabel = MainWindowResources.InitialStatusLabel;
         private bool _isBusy;
 
         private MapView _focusMapView;
@@ -77,7 +77,14 @@ namespace NVGViewer.ViewModel
         public MapView FocusMapView
         {
             get { return _focusMapView; }
-            set { Set(ref _focusMapView, value); }
+            set
+            {
+                Set(ref _focusMapView, value);
+                if (null != value && null != value.SpatialReference)
+                {
+                    StatusLabel = MainWindowResources.DefaultStatusLabel;
+                }
+            }
         }
 
         /// <summary>
@@ -103,7 +110,7 @@ namespace NVGViewer.ViewModel
         /// </summary>
         public void BeginLoadingFiles()
         {
-            StatusLabel = @"Loading files . . .";
+            StatusLabel = MainWindowResources.LoadingFilesStatusLabel;
             IsBusy = true;
         }
 
@@ -112,7 +119,7 @@ namespace NVGViewer.ViewModel
         /// </summary>
         public void EndLoadingFiles()
         {
-            StatusLabel = @"Drag the NVG files on the map view . . .";
+            StatusLabel = MainWindowResources.DefaultStatusLabel;
             IsBusy = false;
         }
     }
