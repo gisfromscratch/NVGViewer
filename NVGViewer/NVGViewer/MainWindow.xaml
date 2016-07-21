@@ -19,9 +19,9 @@
 					  LayerLoaded="FocusMapViewLayerLoaded"
                       Drop="FocusMapViewDropped"
                       SpatialReferenceChanged="FocusMapViewSpatialReferenceChanged">
-			<esri:Map>
-				<esri:ArcGISTiledMapServiceLayer ID="Basemap"
-					ServiceUri="http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer"/>
+            <esri:Map>
+                <esri:ArcGISTiledMapServiceLayer ID="Basemap"
+					ServiceUri="http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServers"/>
 			</esri:Map>
 		</esri:MapView>
 

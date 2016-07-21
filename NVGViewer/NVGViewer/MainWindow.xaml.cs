@@ -18,10 +18,10 @@ using Esri.ArcGISRuntime.Controls;
 using MahApps.Metro.Controls;
 using NVGViewer.ViewModel;
 using System;
-using System.ComponentModel;
-using System.Diagnostics;
+using System.IO;
 using System.Threading.Tasks;
 using System.Windows;
+using Esri.ArcGISRuntime.Layers;
 
 namespace NVGViewer
 {
@@ -34,10 +34,37 @@ namespace NVGViewer
 
         private void FocusMapViewLayerLoaded(object sender, LayerLoadedEventArgs e)
         {
-            if (e.LoadError == null)
+            if (null == e.LoadError)
+            {
                 return;
+            }
 
-            Debug.WriteLine(string.Format("Error while loading layer : {0} - {1}", e.Layer.ID, e.LoadError.Message));
+            if (string.IsNullOrEmpty(e.Layer.ID))
+            {
+                return;
+            }
+
+            if (0 == string.CompareOrdinal(@"basemap", e.Layer.ID.ToLowerInvariant()))
+            {
+                // Loading the online basemap failed
+                // Replace the map
+                FocusMapView.Map = new Map();
+
+                // Try to load the local tile package
+                LoadLocalTiledLayerAsync();
+            }
+        }
+
+        private async void LoadLocalTiledLayerAsync()
+        {
+            const string filePath = @"Data\Basemap.tpk";
+            if (File.Exists(filePath))
+            {
+                var localTiledLayer = new ArcGISLocalTiledLayer(filePath);
+                localTiledLayer.ID = @"LocalBasemap";
+                await localTiledLayer.InitializeAsync();
+                FocusMapView.Map.Layers.Add(localTiledLayer);
+            }
         }
 
         private void FocusMapViewDropped(object sender, DragEventArgs e)
