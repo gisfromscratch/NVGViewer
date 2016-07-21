@@ -9,7 +9,8 @@
 		Width="525">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         
@@ -25,7 +26,11 @@
 			</esri:Map>
 		</esri:MapView>
 
-        <StatusBar Grid.Row="1">
+        <DataGrid Grid.Row="1" ItemsSource="{Binding MessageViewModel.LayerItems}" 
+                  AutoGenerateColumns="True" Style="{StaticResource AzureDataGrid}">
+        </DataGrid>
+
+        <StatusBar Grid.Row="2">
             <StatusBarItem Content="{Binding StatusLabel}"/>
             <Separator />
             <StatusBarItem HorizontalContentAlignment="Stretch">

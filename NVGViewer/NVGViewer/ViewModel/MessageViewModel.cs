@@ -22,6 +22,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Globalization;
 using System.Threading.Tasks;
+using NVGViewer.Model;
 
 namespace NVGViewer.ViewModel
 {
@@ -41,7 +42,10 @@ namespace NVGViewer.ViewModel
         {
             _viewModel = viewModel;
             _nvgElements = new ObservableCollection<INvgElement>();
+            LayerItems = new ObservableCollection<NvgLayerItem>();
         }
+
+        public ObservableCollection<NvgLayerItem> LayerItems { get; }
 
         /// <summary>
         /// Adds a NVG element to this view model.
@@ -75,23 +79,32 @@ namespace NVGViewer.ViewModel
             await mapView.LayersLoadedAsync(new[] { messageLayer });
 
             // Process all messages
+            ulong messageCount = 0;
             foreach (var nvgElement in _nvgElements)
             {
-                ProcessAllMessages(nvgElement, messageLayer);
+                messageCount += ProcessAllMessages(nvgElement, messageLayer);
             }
+
+            var nvgLayerItem = new NvgLayerItem {Name = @"Message Layer", MessageCount = messageCount};
+            LayerItems.Add(nvgLayerItem);
 
             // Clear the elements
             _nvgElements.Clear();
         }
 
-        private void ProcessAllMessages(INvgElement nvgElement, MessageLayer messageLayer)
+        private ulong ProcessAllMessages(INvgElement nvgElement, MessageLayer messageLayer)
         {
+            ulong messageCount = 0;
             var nvgPointElement = nvgElement as NvgPointElement;
-            TryProcessMessage(nvgPointElement, messageLayer);
+            if (TryProcessMessage(nvgPointElement, messageLayer))
+            {
+                messageCount++;
+            }
             foreach (var nvgChildElement in nvgElement.Children)
             {
-                ProcessAllMessages(nvgChildElement, messageLayer);
+                messageCount += ProcessAllMessages(nvgChildElement, messageLayer);
             }
+            return messageCount;
         }
 
         private static bool TryProcessMessage(NvgPointElement nvgPointElement, MessageLayer messageLayer)
