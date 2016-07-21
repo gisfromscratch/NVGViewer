@@ -71,7 +71,8 @@ namespace NVG.Data
             string symbolCode;
             while (reader.MoveToNextAttribute())
             {
-                if (0 == string.CompareOrdinal(@"id", reader.LocalName.ToLowerInvariant()))
+                if (0 == string.CompareOrdinal(@"id", reader.LocalName.ToLowerInvariant())
+                    || 0 == string.CompareOrdinal(@"uri", reader.LocalName.ToLowerInvariant()))
                 {
                     Id = reader.Value;
                 }
