@@ -85,7 +85,11 @@ namespace NVGViewer.ViewModel
                 messageCount += ProcessAllMessages(nvgElement, messageLayer);
             }
 
-            var nvgLayerItem = new NvgLayerItem {Name = @"Message Layer", MessageCount = messageCount};
+            var nvgLayerItem = new NvgLayerItem(messageLayer)
+            {
+                Name = @"Message Layer",
+                MessageCount = messageCount
+            };
             LayerItems.Add(nvgLayerItem);
 
             // Clear the elements
