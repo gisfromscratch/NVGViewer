@@ -42,7 +42,7 @@
 
                 <DataGridTextColumn Header="Layername" Binding="{Binding Name}" Width="*" />
 
-                <DataGridTextColumn Header="Message Count" Binding="{Binding MessageCount}" />
+                <DataGridTextColumn Header="Message Count" Binding="{Binding MessageCount, Mode=OneWay}" />
             </DataGrid.Columns>
         </DataGrid>
 

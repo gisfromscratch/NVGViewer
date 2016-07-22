@@ -19,6 +19,7 @@ using System.Runtime.CompilerServices;
 using Esri.ArcGISRuntime.Layers;
 using Esri.ArcGISRuntime.Symbology.Specialized;
 using GalaSoft.MvvmLight;
+using NVG.Data;
 
 namespace NVGViewer.Model
 {
@@ -36,6 +37,11 @@ namespace NVGViewer.Model
         public NvgLayerItem(MessageLayer messageLayer)
         {
             _messageLayer = messageLayer;
+        }
+
+        internal MessageLayer MessageLayer
+        {
+            get { return _messageLayer; }
         }
 
         public bool IsVisible
