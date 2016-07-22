@@ -22,7 +22,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.Globalization;
-using System.Threading.Tasks;
+using System.Linq;
 using NVGViewer.Model;
 
 namespace NVGViewer.ViewModel
@@ -115,14 +115,25 @@ namespace NVGViewer.ViewModel
 
             // Process all messages
             ulong messageCount = 0;
+            var layerName = @"Message Layer";
             foreach (var nvgElement in _nvgElements)
             {
                 messageCount += ProcessAllMessages(nvgElement, messageLayer);
             }
 
+            // If only one NVG element was processed use the filename as the layer name
+            if (1 == _nvgElements.Count)
+            {
+                var nvgFileMetadata = _nvgElements.First() as INvgFileMetadata;
+                if (null != nvgFileMetadata?.FileInfo)
+                {
+                    layerName = nvgFileMetadata.FileInfo.Name;
+                }
+            }
+
             var nvgLayerItem = new NvgLayerItem(messageLayer)
             {
-                Name = @"Message Layer",
+                Name = layerName,
                 MessageCount = messageCount
             };
             LayerItems.Add(nvgLayerItem);
