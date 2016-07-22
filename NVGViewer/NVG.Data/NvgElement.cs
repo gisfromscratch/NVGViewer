@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Xml;
 
 namespace NVG.Data
@@ -23,7 +23,7 @@ namespace NVG.Data
     /// <summary>
     /// Represents a NVG root element.
     /// </summary>
-    public class NvgElement : INvgElement
+    public class NvgElement : INvgElement, INvgFileMetadata
     {
         /// <summary>
         /// Creates a new NVG element instance.
@@ -54,5 +54,7 @@ namespace NVG.Data
                 }
             }
         }
+
+        public FileInfo FileInfo { get; set; }
     }
 }

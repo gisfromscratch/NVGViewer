@@ -86,6 +86,11 @@ namespace NVGViewer.Commands
                 INvgElement nvgElement;
                 while (null != (nvgElement = nvgReader.ReadNextElement()))
                 {
+                    var nvgFileMetadata = nvgElement as INvgFileMetadata;
+                    if (null != nvgFileMetadata)
+                    {
+                        nvgFileMetadata.FileInfo = new FileInfo(filePathAsString);
+                    }
                     _viewModel.MessageViewModel.AddElement(nvgElement);
                 }
             }

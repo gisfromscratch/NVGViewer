@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:esri="http://schemas.esri.com/arcgis/runtime/2013"
         xmlns:metro="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:model="clr-namespace:NVGViewer.Model"
         DataContext="{Binding Main, Source={StaticResource Locator}}"
 		Title="NVG Viewer" 
 		Height="350" 
@@ -26,8 +27,23 @@
 			</esri:Map>
 		</esri:MapView>
 
-        <DataGrid Grid.Row="1" ItemsSource="{Binding MessageViewModel.LayerItems}" 
-                  AutoGenerateColumns="True" Style="{StaticResource AzureDataGrid}">
+        <DataGrid Grid.Row="1" ItemsSource="{Binding MessageViewModel.LayerItems, UpdateSourceTrigger=PropertyChanged}" 
+                  AutoGenerateColumns="False" Style="{StaticResource AzureDataGrid}">
+            <DataGrid.Columns>
+                <!--
+                Defines the update source trigger.
+                Otherwise teh setter will only be called when the check box lost its focus!
+                -->
+                <DataGridCheckBoxColumn ElementStyle="{DynamicResource MetroDataGridCheckBox}"
+                                        EditingElementStyle="{DynamicResource MetroDataGridCheckBox}"
+                                        Header="Show"
+                                        Binding="{Binding IsVisible, UpdateSourceTrigger=PropertyChanged}"
+                                        />
+
+                <DataGridTextColumn Header="Layername" Binding="{Binding Name}" Width="*" />
+
+                <DataGridTextColumn Header="Message Count" Binding="{Binding MessageCount, Mode=OneWay}" />
+            </DataGrid.Columns>
         </DataGrid>
 
         <StatusBar Grid.Row="2">

@@ -60,7 +60,10 @@ namespace NVG.Data
         {
             get
             {
-                return !string.IsNullOrEmpty(Id) && double.IsNaN(X) && double.IsNaN(Y) && string.IsNullOrEmpty(SymbolCode);
+                return !string.IsNullOrEmpty(Id) 
+                    && double.IsNaN(X) 
+                    && double.IsNaN(Y) 
+                    && string.IsNullOrEmpty(SymbolCode);
             }
         }
 

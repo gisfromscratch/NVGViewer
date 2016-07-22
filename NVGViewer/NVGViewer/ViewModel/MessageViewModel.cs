@@ -20,8 +20,9 @@ using NVG.Data;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 using System.Globalization;
-using System.Threading.Tasks;
+using System.Linq;
 using NVGViewer.Model;
 
 namespace NVGViewer.ViewModel
@@ -43,6 +44,7 @@ namespace NVGViewer.ViewModel
             _viewModel = viewModel;
             _nvgElements = new ObservableCollection<INvgElement>();
             LayerItems = new ObservableCollection<NvgLayerItem>();
+            LayerItems.CollectionChanged += LayerItemsCollectionChanged;
         }
 
         public ObservableCollection<NvgLayerItem> LayerItems { get; }
@@ -59,6 +61,39 @@ namespace NVGViewer.ViewModel
             }
 
             _nvgElements.Add(nvgElement);
+        }
+
+        private void LayerItemsCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            // Update the layer list of the map
+            switch (e.Action)
+            {
+                case NotifyCollectionChangedAction.Remove:
+                    if (null != e.OldItems)
+                    {
+                        foreach (var oldItem in e.OldItems)
+                        {
+                            var oldLayerItem = oldItem as NvgLayerItem;
+                            if (null != oldLayerItem)
+                            {
+                                RemoveLayer(oldLayerItem);
+                            }
+                        }
+                    }        
+                    break;
+            }
+        }
+
+        private void RemoveLayer(NvgLayerItem layerItem)
+        {
+            var mapView = _viewModel.FocusMapView;
+            if (null == mapView)
+            {
+                return;
+            }
+
+            // Remove the associated layer
+            mapView.Map.Layers.Remove(layerItem.MessageLayer);
         }
 
         /// <summary>
@@ -80,12 +115,27 @@ namespace NVGViewer.ViewModel
 
             // Process all messages
             ulong messageCount = 0;
+            var layerName = @"Message Layer";
             foreach (var nvgElement in _nvgElements)
             {
                 messageCount += ProcessAllMessages(nvgElement, messageLayer);
             }
 
-            var nvgLayerItem = new NvgLayerItem {Name = @"Message Layer", MessageCount = messageCount};
+            // If only one NVG element was processed use the filename as the layer name
+            if (1 == _nvgElements.Count)
+            {
+                var nvgFileMetadata = _nvgElements.First() as INvgFileMetadata;
+                if (null != nvgFileMetadata?.FileInfo)
+                {
+                    layerName = nvgFileMetadata.FileInfo.Name;
+                }
+            }
+
+            var nvgLayerItem = new NvgLayerItem(messageLayer)
+            {
+                Name = layerName,
+                MessageCount = messageCount
+            };
             LayerItems.Add(nvgLayerItem);
 
             // Clear the elements
