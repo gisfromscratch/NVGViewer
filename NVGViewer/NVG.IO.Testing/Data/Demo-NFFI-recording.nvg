@@ -50,9 +50,9 @@
    </a>
    <a href="http://nffi.demo.nato.int/units?id=NO007">
       <point course="180.0" id="NFFI-NO007"
-             label="NFFI:NO007 - Norwegian Naval Unit"
+             label="NFFI:NO007 - Norwegian Coast Guard"
              speed="20.0"
-             symbol="app6a:SFSPFF--------"
+             symbol="app6a:SFGPUCP-------"
              x="2.475000"
              y="48.975000"/>
    </a>
